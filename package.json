@@ -13,6 +13,7 @@
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "@tabler/icons-react": "^3.34.1",
     "daisyui": "^5.0.50",
+    "framer-motion": "^12.23.12",
     "next": "15.4.7",
     "react": "19.1.0",
     "react-dom": "19.1.0"
