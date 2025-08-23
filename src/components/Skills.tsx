@@ -27,16 +27,16 @@ interface SkillCategory {
 }
 
 const skillCategories: SkillCategory[] = [
-  {
-    id: 'mobile-dev',
-    name: 'Mobile Development',
-    icon: skill_badges.mobile || 'https://img.shields.io/badge/Mobile-blue?style=flat&logo=smartphone&logoColor=white', // Using a generic placeholder if not found
-    skills: [
-      { name: 'Flutter', icon: skill_badges.flutter },
-      { name: 'Android Studio', icon: skill_badges.androidstudio },
-      { name: 'Firebase', icon: skill_badges.firebase },
-    ],
-  },
+  // {
+  //   id: 'mobile-dev',
+  //   name: 'Mobile Development',
+  //   icon: skill_badges.mobile || 'https://img.shields.io/badge/Mobile-blue?style=flat&logo=smartphone&logoColor=white', // Using a generic placeholder if not found
+  //   skills: [
+  //     { name: 'Flutter', icon: skill_badges.flutter },
+  //     { name: 'Android Studio', icon: skill_badges.androidstudio },
+  //     { name: 'Firebase', icon: skill_badges.firebase },
+  //   ],
+  // },
   {
     id: 'blockchain',
     name: 'Blockchain',
@@ -54,7 +54,6 @@ const skillCategories: SkillCategory[] = [
     icon: skill_badges.devops || 'https://img.shields.io/badge/DevOps-F54A58?style=flat&logo=aws&logoColor=white', // Using a generic placeholder if not found
     skills: [
       { name: 'Linux', icon: skill_badges.linux },
-      { name: 'VIM', icon: skill_badges.vim },
       { name: 'GIT', icon: skill_badges.git },
       { name: 'Docker', icon: skill_badges.docker },
     ],
