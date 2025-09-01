@@ -1,7 +1,6 @@
 interface SkillBadgeType {
   [key: string]: string;
 }
-
 export const skill_badges: SkillBadgeType = {
   c: "https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=black",
   cplusplus:
@@ -84,10 +83,26 @@ export const skill_badges: SkillBadgeType = {
     "https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white",
   opencv:
     "https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white",
+  // New badges for skills from resume
+  sql: "https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=mysql&logoColor=white",
+  tailwind: "https://img.shields.io/badge/Tailwind%20CSS-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white",
+  bootstrap: "https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white",
+  express: "https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white",
+  streamlit: "https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white",
+  plotly: "https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white",
+  spacy: "https://img.shields.io/badge/SpaCy-09A3D5?style=for-the-badge&logo=spacy&logoColor=white",
+  beautifulsoup: "https://img.shields.io/badge/Beautiful%20Soup-336791?style=for-the-badge&logo=python&logoColor=white",
+  vscode: "https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white",
+  github: "https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white",
+  windows: "https://img.shields.io/badge/Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white",
+  vercel: "https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white",
+  render: "https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white",
+  netlify: "https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white",
+  huggingface: "https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black",
+  blockchain: "https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=blockchain&logoColor=white",
 };
-
 export const skill_badges_mono: SkillBadgeType = {
-  c: "https://img.shields.io/badge/C-fff?style=for-the-badge&logo=c&logoColor=black",
+  c: "https://img.shields.io/badge/C-fff?style=for-the-badge&logo=c&logoColor=white",
   cplusplus:
     "https://img.shields.io/badge/C%2B%2B-fff?style=for-the-badge&logo=c%2B%2B&logoColor=black",
   java: "https://img.shields.io/badge/Java-fff?style=for-the-badge&logo=openjdk&logoColor=black",
@@ -168,4 +183,21 @@ export const skill_badges_mono: SkillBadgeType = {
     "https://img.shields.io/badge/Kaggle-fff?style=for-the-badge&logo=kaggle&logoColor=black",
   opencv:
     "https://img.shields.io/badge/opencv-fff?style=for-the-badge&logo=opencv&logoColor=black",
+  // New badges for skills from resume
+  sql: "https://img.shields.io/badge/SQL-fff?style=for-the-badge&logo=mysql&logoColor=black",
+  tailwind: "https://img.shields.io/badge/Tailwind%20CSS-fff?style=for-the-badge&logo=tailwindcss&logoColor=black",
+  bootstrap: "https://img.shields.io/badge/Bootstrap-fff?style=for-the-badge&logo=bootstrap&logoColor=black",
+  express: "https://img.shields.io/badge/Express-fff?style=for-the-badge&logo=express&logoColor=black",
+  streamlit: "https://img.shields.io/badge/Streamlit-fff?style=for-the-badge&logo=streamlit&logoColor=black",
+  plotly: "https://img.shields.io/badge/Plotly-fff?style=for-the-badge&logo=plotly&logoColor=black",
+  spacy: "https://img.shields.io/badge/SpaCy-fff?style=for-the-badge&logo=spacy&logoColor=black",
+  beautifulsoup: "https://img.shields.io/badge/Beautiful%20Soup-fff?style=for-the-badge&logo=python&logoColor=black",
+  vscode: "https://img.shields.io/badge/VSCode-fff?style=for-the-badge&logo=visualstudiocode&logoColor=black",
+  github: "https://img.shields.io/badge/GitHub-fff?style=for-the-badge&logo=github&logoColor=black",
+  windows: "https://img.shields.io/badge/Windows-fff?style=for-the-badge&logo=windows&logoColor=black",
+  vercel: "https://img.shields.io/badge/Vercel-fff?style=for-the-badge&logo=vercel&logoColor=black",
+  render: "https://img.shields.io/badge/Render-fff?style=for-the-badge&logo=render&logoColor=black",
+  netlify: "https://img.shields.io/badge/Netlify-fff?style=for-the-badge&logo=netlify&logoColor=black",
+  huggingface: "https://img.shields.io/badge/Hugging%20Face-fff?style=for-the-badge&logo=huggingface&logoColor=black",
+  blockchain: "https://img.shields.io/badge/Blockchain-fff?style=for-the-badge&logo=blockchain&logoColor=black",
 };
