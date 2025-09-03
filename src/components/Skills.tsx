@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 
 // src/components/SkillsCarousel.tsx
 'use client'; // This is a client component as it uses Splide.js and interactive elements.
@@ -9,6 +10,7 @@ import '@splidejs/react-splide/css';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 // Import the skill badges data
 import { skill_badges } from '@/data/skills';
+import Image from 'next/image';
 // Define TypeScript interfaces for skill data
 interface SkillItem {
   name: string;
@@ -142,16 +144,16 @@ const SkillsCarousel: React.FC = () => {
                   {category.skills.map((skill, index) => (
                     <div
                       key={index}
-                      className="flex items-center text-gray-700 text-sm font-medium whitespace-nowrap shadow-sm transition-all duration-200 hover:text-blue-800 cursor-pointer"
+                      className="flex rounded-full items-center text-gray-700 text-sm font-medium whitespace-nowrap shadow-sm transition-all duration-200 hover:text-blue-800 cursor-pointer"
                     >
                       {/* Use img tag for Shields.io badges for individual skills */}
                       <img
                         src={skill.icon}
                         alt={`${skill.name} icon`}
-                        className="h-5 w-auto" // Adjust size as needed
+                        className="h-6 w-auto rounded-full" // Adjust size as needed
                         onError={(e) => { e.currentTarget.src = 'https://placehold.co/16x16/cccccc/ffffff?text=X'; }} // Fallback image
                       />
-                      {/* {skill.name} */}
+                      
                     </div>
                   ))}
                 </div>
