@@ -12,7 +12,7 @@ export const skill_badges: SkillBadgeType = {
   html: "https://img.shields.io/badge/HTML5-FFFFFF?style=for-the-badge&logo=html5",
   css: "https://img.shields.io/badge/CSS3-FFFFFF?style=for-the-badge&logo=css3",
   javascript:
-    "https://img.shields.io/badge/JavaScript-fff?style=for-the-badge&logo=javascript",
+    "https://img.shields.io/badge/JavaScript-fff?style=for-the-badge&logo=javascript&logoColor=black",
   typescript:
     "https://img.shields.io/badge/TypeScript-FFFFFF?style=for-the-badge&logo=typescript",
   nodejs:
@@ -20,9 +20,9 @@ export const skill_badges: SkillBadgeType = {
   go: "https://img.shields.io/badge/Go-FFFFFF?style=for-the-badge&logo=go",
   dart: "https://img.shields.io/badge/Dart-FFFFFF?style=for-the-badge&logo=dart",
   reactjs:
-    "https://img.shields.io/badge/React.js-FFFFFF?style=for-the-badge&logo=react&logoColor=61DAFB",
+    "https://img.shields.io/badge/React.js-FFFFFF?style=for-the-badge&logo=react&logoColor=black",
   nextjs:
-    "https://img.shields.io/badge/Next.js-FFFFFF.svg?style=for-the-badge&logo=Next.js&labelColor=000000",
+    "https://img.shields.io/badge/Next.js-FFFFFF.svg?style=for-the-badge&logo=Next.js&logoColor=black",
   mysql:
     "https://img.shields.io/badge/MySQL-FFFFFF?style=for-the-badge&logo=mysql",
   postgresql:
@@ -92,11 +92,11 @@ export const skill_badges: SkillBadgeType = {
   plotly: "https://img.shields.io/badge/Plotly-FFF?style=for-the-badge&logo=plotly",
   spacy: "https://img.shields.io/badge/SpaCy-fff?style=for-the-badge&logo=spacy",
   beautifulsoup: "https://img.shields.io/badge/Beautiful%20Soup-fff?style=for-the-badge&logo=python",
-  vscode: "https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode",
-  github: "https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github",
-  windows: "https://img.shields.io/badge/Windows-0078D4?style=for-the-badge&logo=windows",
-  vercel: "https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel",
-  render: "https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render",
+  vscode: "https://img.shields.io/badge/VSCode-fff?style=for-the-badge&logo=visualstudiocode",
+  github: "https://img.shields.io/badge/GitHub-fff?style=for-the-badge&logo=github&logoColor=black",
+  windows: "https://img.shields.io/badge/Windows-fff?style=for-the-badge&logo=windows&logoColor=black",
+  vercel: "https://img.shields.io/badge/Vercel-fff?style=for-the-badge&logo=vercel&logoColor=black",
+  render: "https://img.shields.io/badge/Render-fff?style=for-the-badge&logo=render&logoColor=black",
   netlify: "https://img.shields.io/badge/Netlify-fff?style=for-the-badge&logo=netlify",
   huggingface: "https://img.shields.io/badge/Hugging%20Face-FFF?style=for-the-badge&logo=huggingface&logoColor=black",
   blockchain: "https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=blockchain",
@@ -122,7 +122,7 @@ export const skill_badges_mono: SkillBadgeType = {
   reactjs:
     "https://img.shields.io/badge/React.js-fff?style=for-the-badge&logo=react&logoColor=black",
   nextjs:
-    "https://img.shields.io/badge/Next.js-fff?style=for-the-badge&logo=Next.js&logoColor=black",
+    "https://img.shields.io/badge/Next.js-fff?style=for-the-badge&logo=Next.js",
   mysql:
     "https://img.shields.io/badge/MySQL-fff?style=for-the-badge&logo=mysql&logoColor=black",
   postgresql:

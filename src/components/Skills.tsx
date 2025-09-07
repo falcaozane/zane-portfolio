@@ -97,14 +97,14 @@ const SkillsCarousel: React.FC = () => {
         <h2 className="text-4xl font-extrabold text-orange-500 mb-12 relative pb-4 px-8">
           <span className="relative z-10">
             SKILLS
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-28 h-1 bg-gradient-to-r from-orange-400 to-amber-300 rounded-full"></span>
+            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-28 h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
           </span>
         </h2>
         <Splide
           options={{
             type: 'loop',
             perPage: 4, // Show 4 cards on larger screens
-            gap: '1.5rem',
+            gap: '1rem',
             arrows: false,
             pagination: true,
             drag: 'free',
@@ -134,17 +134,17 @@ const SkillsCarousel: React.FC = () => {
         >
           {skillCategories.map((category) => (
             <SplideSlide key={category.id}>
-              <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-start h-full duration-300 hover:shadow-2xl border-1 border-amber-500 z-10">
+              <div className="bg-white rounded-xl p-5 flex flex-col items-start h-full duration-300 border-2 border-orange-400 z-10 shadow-lg hover:shadow-2xl">
                 <div className="flex items-center space-x-3 mb-6">
-                  <h3 className="text-2xl font-bold text-gray-800">
+                  <h3 className="text-2xl font-bold text-orange-500 flex items-center">
                     {category.name}
                   </h3>
                 </div>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, index) => (
                     <div
                       key={index}
-                      className="flex rounded-full items-center text-gray-700 text-sm font-medium whitespace-nowrap shadow-sm transition-all duration-200 hover:text-blue-800 cursor-pointer"
+                      className="flex rounded-full items-center text-gray-700 text-sm font-medium border-1 border-orange-400 whitespace-nowrap transition-all duration-200 hover:border-1 hover:border-orange-300 cursor-pointer"
                     >
                       {/* Use img tag for Shields.io badges for individual skills */}
                       <img
