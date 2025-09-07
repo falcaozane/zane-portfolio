@@ -1,0 +1,65 @@
+import React from 'react'
+import { projects } from '@/data/projects'
+import { IconCertificate, IconWorldShare } from '@tabler/icons-react'
+
+const Projects = () => {
+  return (
+    <section id="projects" className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl font-extrabold text-orange-500 mb-12 relative pb-2">
+                <span className="relative z-10">
+                    PROJECTS
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-44 h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
+            </span>
+            </h2>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                {projects.map((project) => (
+                <div
+                    className="duration-200 card-compact shadow-md card hover:shadow-xl text-amber-600 border-2 border-orange-400 hover:border-orange-300 bg-white"
+                    key={`${project.company}-${project.post}`}
+                >
+                    <div className="card-body">
+                    {/* <img
+                        className="rounded-full w-20 h-20 mb-2"
+                        src={project.image}
+                        alt={project.company}
+                    /> */}
+                    <h2 className="card-title">{project.post}</h2>
+                    <h3 className="flex items-center gap-1">
+                        {project.company}
+                        
+                        <a
+                            className="text-secondary"
+                            target="blank"
+                            href={project.website}
+                        >
+                            <IconWorldShare size={20} />
+                        </a>
+                    </h3>
+                    <h4 className="text-sm italic">{project.type}</h4>
+                    <p className="text-sm">
+                        {project.start} - {project.end}
+                    </p>
+                    <div className="justify-end card-actions">
+                        {project.letter &&
+                        
+                            <a target="blank" href={project.letter}>
+                            <button className="btn btn-circle btn-outline border-orange-400 text-orange-500 hover:bg-orange-500 hover:text-white hover:border-amber-500">
+                                <IconCertificate />
+                            </button>
+                            </a>
+                        }
+                        {/* {project.ongoing && (
+                        <span className="badge badge-primary">Ongoing</span>
+                        )} */}
+                    </div>
+                    </div>
+                </div>
+                ))}
+            </div>
+        </div>
+    </section>
+  )
+}
+
+export default Projects
