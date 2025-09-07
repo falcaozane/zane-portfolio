@@ -3,6 +3,8 @@
 // src/components/SkillsCarousel.tsx
 'use client'; // This is a client component as it uses Splide.js and interactive elements.
 import React from 'react';
+// Add this import to resolve Splide types
+// @ts-ignore
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 // Import the Splide core CSS
 import '@splidejs/react-splide/css';
@@ -10,7 +12,6 @@ import '@splidejs/react-splide/css';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 // Import the skill badges data
 import { skill_badges } from '@/data/skills';
-import Image from 'next/image';
 // Define TypeScript interfaces for skill data
 interface SkillItem {
   name: string;
