@@ -4,7 +4,6 @@
 'use client'; // This is a client component as it uses Splide.js and interactive elements.
 import React from 'react';
 // Add this import to resolve Splide types
-// @ts-expect-error
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 // Import the Splide core CSS
 import '@splidejs/react-splide/css';
