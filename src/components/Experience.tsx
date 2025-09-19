@@ -4,7 +4,7 @@ import { IconCertificate, IconWorldShare } from '@tabler/icons-react'
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-16 bg-gray-100">
+    <section id="experience" className="py-10 bg-gray-100 px-8">
         <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-extrabold text-orange-500 mb-12 relative pb-2">
                 <span className="relative z-10">

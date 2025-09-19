@@ -9,7 +9,7 @@ function Header() {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
             {/* Navbar */}
-            <div className="navbar w-full bg-white px-5">
+            <div className="navbar w-full px-5">
             <div className="mx-2 flex-1 px-3">
                 <Image src={FZ} alt="Logo" className="h-10 w-12" />
             </div>
