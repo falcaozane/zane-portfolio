@@ -1,55 +1,55 @@
 import React from 'react'
-import { experiences } from '@/data/work-exp'
+import { projects } from '@/data/projects'
 import { IconCertificate, IconWorldShare } from '@tabler/icons-react'
 
-const Experience = () => {
+const Certifications = () => {
   return (
-    <section id="experience" className="py-10 bg-gray-100 px-8">
+    <section id="projects" className="py-10 bg-gray-100 px-8">
         <div className="max-w-7xl mx-auto">
             <h3 className=" text-2xl lg:text-4xl font-extrabold text-orange-500 mb-12 relative pb-2 inline-block">
                 <span className="relative inline-block pb-1">
-                    WORK EXPERIENCE
+                    CERTIFICATIONS
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
                 </span>
             </h3>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                {experiences.map((experience) => (
+                {projects.map((project) => (
                 <div
                     className="duration-200 card-compact shadow-md card hover:shadow-xl text-amber-600 border-2 border-orange-400 hover:border-orange-300 bg-white"
-                    key={`${experience.company}-${experience.post}`}
+                    key={`${project.company}-${project.post}`}
                 >
                     <div className="card-body">
                     {/* <img
                         className="rounded-full w-20 h-20 mb-2"
-                        src={experience.image}
-                        alt={experience.company}
+                        src={project.image}
+                        alt={project.company}
                     /> */}
-                    <h2 className="card-title">{experience.post}</h2>
+                    <h2 className="card-title">{project.post}</h2>
                     <h3 className="flex items-center gap-1">
-                        {experience.company}
+                        {project.company}
                         
                         <a
                             className="text-secondary"
                             target="blank"
-                            href={experience.website}
+                            href={project.website}
                         >
-                            <IconWorldShare className="text-orange-500 hover:text-amber-400" size={20} />
+                            <IconWorldShare size={20} />
                         </a>
                     </h3>
-                    <h4 className="text-sm italic">{experience.type}</h4>
+                    <h4 className="text-sm italic">{project.type}</h4>
                     <p className="text-sm">
-                        {experience.start} - {experience.end}
+                        {project.start} - {project.end}
                     </p>
                     <div className="justify-end card-actions">
-                        {experience.letter &&
+                        {project.letter &&
                         
-                            <a target="blank" href={experience.letter}>
+                            <a target="blank" href={project.letter}>
                             <button className="btn btn-circle btn-outline border-orange-400 text-orange-500 hover:bg-orange-500 hover:text-white hover:border-amber-500">
                                 <IconCertificate />
                             </button>
                             </a>
                         }
-                        {/* {experience.ongoing && (
+                        {/* {project.ongoing && (
                         <span className="badge badge-primary">Ongoing</span>
                         )} */}
                     </div>
@@ -62,4 +62,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Certifications

@@ -93,14 +93,14 @@ const skillCategories: SkillCategory[] = [
 ];
 const SkillsCarousel: React.FC = () => {
   return (
-    <section className="py-12 bg-gray-100">
-      <div className="">
-        <h2 className="text-4xl font-extrabold text-orange-500 mb-12 relative pb-4 px-8">
-          <span className="relative z-10">
-            SKILLS
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-28 h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
-          </span>
-        </h2>
+    <section id="skills" className="py-12 bg-gray-100">
+      <div className="max-w-7xl mx-auto">
+          <h3 className="text-2xl lg:text-4xl font-extrabold text-orange-500 mb-12 relative pb-2 inline-block px-8">
+              <span className="relative inline-block pb-1">
+                SKILLS
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
+              </span>
+          </h3>
         <Splide
           options={{
             type: 'loop',

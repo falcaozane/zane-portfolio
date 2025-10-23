@@ -6,12 +6,12 @@ const Projects = () => {
   return (
     <section id="projects" className="py-10 bg-gray-100 px-8">
         <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-extrabold text-orange-500 mb-12 relative pb-2">
-                <span className="relative z-10">
+            <h3 className=" text-2xl lg:text-4xl font-extrabold text-orange-500 mb-12 relative pb-2 inline-block">
+                <span className="relative inline-block pb-1">
                     PROJECTS
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-44 h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
-            </span>
-            </h2>
+                <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
+                </span>
+            </h3>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 {projects.map((project) => (
                 <div
@@ -56,6 +56,9 @@ const Projects = () => {
                     </div>
                 </div>
                 ))}
+            </div>
+            <div className='text-center'>
+                <button className="rounded-sm w-full mt-8 btn bg-orange-500 border-orange-600 text-white hover:bg-amber-500 hover:border-amber-500">View More</button>
             </div>
         </div>
     </section>

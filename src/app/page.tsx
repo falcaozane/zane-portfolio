@@ -4,6 +4,8 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import PostOfRes from "@/components/PostOfRes";
+import Certifications from "@/components/Certifications";
+import Education from "@/components/Education";
 
 
 export default function Home() {
@@ -18,6 +20,8 @@ export default function Home() {
       <Experience />
       <Projects />
       <PostOfRes />
+      <Certifications />
+      <Education />
     </>
   );
 }
