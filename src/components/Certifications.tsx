@@ -1,5 +1,5 @@
 import React from 'react'
-import { projects } from '@/data/projects'
+import { certifications, projects } from '@/data/certifications'
 
 const Certifications = () => {
   return (
@@ -12,7 +12,7 @@ const Certifications = () => {
                 </span>
             </h3>
             <div className="grid bg-base-200 gap-0.5 p-0.5 md:grid-cols-2">
-                {projects.map((project) => (
+                {projects.map((project : certifications) => (
                 <a
                     key={`${project.company}-${project.post}`}
                     target="blank"
