@@ -1,6 +1,5 @@
 import React from 'react'
 import { projects } from '@/data/projects'
-import { IconCertificate, IconWorldShare } from '@tabler/icons-react'
 
 const Certifications = () => {
   return (
@@ -12,49 +11,41 @@ const Certifications = () => {
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
                 </span>
             </h3>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="grid bg-base-200 gap-0.5 p-0.5 md:grid-cols-2">
                 {projects.map((project) => (
-                <div
-                    className="duration-200 card-compact shadow-md card hover:shadow-xl text-amber-600 border-2 border-orange-400 hover:border-orange-300 bg-white"
+                <a
                     key={`${project.company}-${project.post}`}
+                    target="blank"
+                    // Link to the certificate letter, or fallback to website
+                    href={project.letter || project.website || '#'}
+                    className="duration-200 group flex items-center bg-base-100 h-full w-full justify-between p-4 hover:bg-amber-500 hover:text-white hover:shadow-2xl hover:scale-105"
                 >
-                    <div className="card-body">
-                    {/* <img
-                        className="rounded-full w-20 h-20 mb-2"
-                        src={project.image}
-                        alt={project.company}
-                    /> */}
-                    <h2 className="card-title">{project.post}</h2>
-                    <h3 className="flex items-center gap-1">
-                        {project.company}
-                        
-                        <a
-                            className="text-secondary"
-                            target="blank"
-                            href={project.website}
-                        >
-                            <IconWorldShare size={20} />
-                        </a>
-                    </h3>
-                    <h4 className="text-sm italic">{project.type}</h4>
-                    <p className="text-sm">
+                    <div className="flex items-center gap-3">
+                    <div className="avatar">
+                        <div className="bg-base-100 w-12 rounded-full outline outline-offset-2 outline-base-content/40 group-hover:outline-primary-content">
+                        <img
+                            loading="eager"
+                            // Use project.image (make sure it exists in your data)
+                            src={project.image}
+                            alt={project.company}
+                        />
+                        </div>
+                    </div>
+                    <div className="flex flex-col ml-4">
+                        {/* Mapped project.post to title */}
+                        <h2 className="font-bold text-lg">{project.post}</h2>
+                        {/* Mapped project.company to organization */}
+                        <p>{project.company}</p>
+                        {/* Mapped date range */}
+                        <p className="text-sm opacity-70">
                         {project.start} - {project.end}
-                    </p>
-                    <div className="justify-end card-actions">
-                        {project.letter &&
-                        
-                            <a target="blank" href={project.letter}>
-                            <button className="btn btn-circle btn-outline border-orange-400 text-orange-500 hover:bg-orange-500 hover:text-white hover:border-amber-500">
-                                <IconCertificate />
-                            </button>
-                            </a>
-                        }
-                        {/* {project.ongoing && (
-                        <span className="badge badge-primary">Ongoing</span>
-                        )} */}
+                        </p>
                     </div>
                     </div>
-                </div>
+                    {/* The target layout doesn't have a separate icon/button, 
+                    as the whole card is one link.
+                    */}
+                </a>
                 ))}
             </div>
         </div>

@@ -1,74 +1,103 @@
-export const projects = [
+// 1. Define the Project type to match your resume's project section
+export type Project = {
+  slug: string // For the URL, e.g., /Projects/legal-document-assistant
+  post: string // The title of the project
+  website?: string // The live URL of the project
+  type: string // e.g., "Hackathon Project", "Mini Project"
+  date: string // The date or date range of the project
+  technologies: string[]
+  detailedDescription: string
+  demoLink?: string // For video demos (like your Google Drive link)
+}
+
+// 2. Your updated projects list, based on the "Projects" section of your resume
+export const projects: Project[] = [
   {
-    company: "Capgemini India",
-    website: "https://www.capgemini.com/in-en/",
-    post: "Analyst A4",
-    type: "Full-Time",
-    start: "September 2025",
-    end: "Present",
-    // letter: "https://drive.google.com/file/d/10WHIq1OnUl244AFBnENK9wsl5oCDd9YL/view?usp=sharing",
-    skills: [
-      "Python",
-      "FastAPI",
-      "Flask",
-      "Next.js",
-      "React.js",
-      "Langchain",
-      "Docker",
-      "Linux",
+    slug: 'legal-document-assistant',
+    post: 'A.I powered Legal Document Assistant',
+    type: 'Smart India Hackathon 23 (Group of 6)',
+    date: 'Dec 2023',
+    technologies: [
+      'Next.js',
+      'React',
+      'Tailwind CSS',
+      'MongoDB',
+      'Langchain.js',
+      'OpenAI API',
+      'Pinecone',
+      'Python',
+      'Firebase',
+      'Vercel',
+      'Razorpay',
+      'Beautiful Soup',
     ],
+    detailedDescription:
+      'Developed a multi-functional legal AI assistant for document creation, simplification & IPC chatbot.',
+    // No website or demo link provided in the resume for this one
   },
   {
-    company: "Arcon",
-    website: "https://arconnet.com/",
-    post: "Quality Assurance Intern",
-    type: "Internship",
-    start: "February 2025",
-    end: "August 2025",
-    letter: "https://drive.google.com/file/d/1707kOKDgg7-anMMdfSwSS1Svg9oUeHD7/view?usp=sharing",
-    skills: ["Next.js", "SQLite", "Pocketbase", "Recharts"],
-  },
-  {
-    company: "Ignitus Network",
-    image:
-      "https://media.licdn.com/dms/image/C4D0BAQFwq94aaHO6Mw/company-logo_200_200/0/1657880937495?e=1695254400&v=beta&t=uc1-RlDWy8O5JaJtK5zsws3yJvgW3kJWvdlDn2hy_YE",
-    website: "",
-    post: "Blockchain Developer Intern",
-    type: "Internship",
-    start: "June 2024",
-    end: "September 2024",
-    letter:
-      "https://drive.google.com/file/d/10WHIq1OnUl244AFBnENK9wsl5oCDd9YL/view?usp=sharing",
-    skills: [
-      "Flutter",
-      "Android",
-      "iOS",
-      "Firebase",
-      "REST APIs",
-      "UI/UX",
-      "Python",
-      "Django",
+    slug: 'stock-allocation-engine',
+    post: 'A.I based Stock Allocation Engine',
+    website: 'https://nse-stocks-portfolio-allocation.streamlit.app/',
+    type: 'TIAA RETIRE-AI-THON PROJECT', // Inferred from context
+    date: 'May 2024',
+    technologies: [
+      'Python',
+      'Streamlit',
+      'Plotly',
+      'Matplotlib',
+      'NumPy',
+      'Yahoo Finance',
+      'Pandas',
+      'PyPortfolioOpt',
+      'Flask',
     ],
+    detailedDescription:
+      'Utilised machine learning techniques for portfolio optimization, considering risk tolerance and historical data. Built a user-friendly interface (playground) for easy portfolio construction, rebalancing and visualization.',
   },
   {
-    company: "DigiHelic Solutions Pvt. Ltd.",
-    image:
-      "https://skinzy.in/static/media/logo-transparent-background.8d754bd6e489edf2f14d.png",
-    website: "https://digihelic.com/",
-    post: "Web Developer Intern",
-    type: "Internship",
-    start: "July 2022",
-    end: "November 2022",
-    letter:
-      "https://drive.google.com/file/d/1cBWE5BZ1Kq7XbPw9_NxefVjEgYs2BWlD/view?usp=sharing",
-    skills: [
-      "Mentoring",
-      "Management",
-      "Python",
-      "Communication",
-      "Flutter",
-      "Public Speaking",
+    slug: 'robo-hr',
+    post: 'Robo HR',
+    type: '3rd year mini project (Group of 3)',
+    date: 'Aug 2023 - Apr 2024',
+    technologies: [
+      'Next.js',
+      'React',
+      'Tailwind CSS',
+      'Langchain.js',
+      'OpenAI GPT 3.5',
+      'Pinecone',
+      'Python',
+      'SpaCy',
+      'NLP',
+      'Streamlit',
+      'Scikit-Learn',
+      'PyMuPDF',
     ],
+    detailedDescription:
+      'Built AI-powered HR automation for resume parsing using OpenAI & NER models.',
   },
-  
-];
+  {
+    slug: 'doccrypt',
+    post: 'DocCrypt : AI-powered Secure Document Management Platform',
+    website: 'https://doc-crypt-aptos.vercel.app/',
+    type: 'Unfold 2k24 Blockchain Hackathon', // Inferred from context
+    date: 'Dec 2024',
+    technologies: [
+      'React',
+      'Tailwind CSS',
+      'ShadCN',
+      'RadixUI',
+      'Aptos',
+      'Pinata',
+      'IPFS',
+      'Langchain',
+      'Gemini( Google Gen A.I.)',
+      'Smart Contracts ( Move )',
+    ],
+    detailedDescription:
+      'Developed a decentralised, AI-powered platform for secure document storage, categorisation, digital signature, and natural language-based document interaction.',
+    demoLink:
+      'https://drive.google.com/file/d/1KnNaGDdDy1yXmMJITeSJ6fLnQact86oo/view',
+  },
+]

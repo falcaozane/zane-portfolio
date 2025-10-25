@@ -1,11 +1,14 @@
 import React from 'react'
 
-const ProjectsLayoyt = () => {
+export default function ProjectsLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  
   return (
-    <div>
-      Projects
-    </div>
+    <>
+      {children}
+    </>
   )
 }
-
-export default ProjectsLayoyt

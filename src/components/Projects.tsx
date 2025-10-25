@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import { projects } from '@/data/projects'
 import { IconCertificate, IconWorldShare } from '@tabler/icons-react'
+import Link from 'next/link'
 
 const Projects = () => {
   return (
@@ -58,7 +60,7 @@ const Projects = () => {
                 ))}
             </div>
             <div className='text-center'>
-                <button className="rounded-sm w-full mt-8 btn bg-orange-500 border-orange-600 text-white hover:bg-amber-500 hover:border-amber-500">View More</button>
+                <Link href="/Projects" className="rounded-sm w-full mt-8 btn bg-orange-500 border-orange-600 text-white hover:bg-amber-500 hover:border-amber-500">View More</Link>
             </div>
         </div>
     </section>
