@@ -16,7 +16,7 @@ const Education = () => {
                 {education.map((degree) => (
                 <div
                     className="duration-200 card-compact shadow-md card hover:shadow-xl text-amber-600 border-2 border-orange-400 hover:border-orange-300 bg-white"
-                    key={`${degree.company}-${degree.post}`}
+                    key={`${degree.institue}-${degree.post}`}
                 >
                     <div className="card-body">
                     {/* <img
@@ -24,7 +24,7 @@ const Education = () => {
                         src={project.image}
                         alt={project.company}
                     /> */}
-                    <h2 className="card-title">{degree.post}</h2>
+                    {/* <h2 className="card-title">{degree.post}</h2> */}
                     <h3 className="flex items-center gap-1">
                         {degree.institue}
                         
