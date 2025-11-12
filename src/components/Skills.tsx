@@ -11,7 +11,7 @@ import '@splidejs/react-splide/css';
 // Import the AutoScroll extension
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 // Import the skill badges data
-import { skill_badges } from '@/data/skills';
+import { skill_badges, skill_badges_mono } from '@/data/skills';
 // Define TypeScript interfaces for skill data
 interface SkillItem {
   name: string;
@@ -32,6 +32,7 @@ const skillCategories: SkillCategory[] = [
       { name: 'C', icon: skill_badges.c },
       { name: 'C++', icon: skill_badges.cplusplus },
       { name: 'JavaScript', icon: skill_badges.javascript },
+      { name:'Java',icon:skill_badges_mono.java},
       { name: 'Python', icon: skill_badges.python },
       { name: 'SQL', icon: skill_badges.sql },
       { name: 'TypeScript', icon: skill_badges.typescript },
@@ -47,7 +48,7 @@ const skillCategories: SkillCategory[] = [
       { name: 'Tailwind CSS', icon: skill_badges.tailwind },
       { name: 'Bootstrap', icon: skill_badges.bootstrap },
       { name: 'Express', icon: skill_badges.express },
-      { name: 'Langchain', icon: skill_badges.langchain },
+      { name: 'Langchain', icon: skill_badges_mono.langchain },
       { name: 'Flask', icon: skill_badges.flask },
       { name: 'Fast-API', icon: skill_badges.fastapi },
       { name: 'Streamlit', icon: skill_badges.streamlit },

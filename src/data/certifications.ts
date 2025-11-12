@@ -31,7 +31,7 @@ export type certifications = {
 
 // 2. Your updated projects list
 
-export const projects: certifications[] = [
+export const certifications: certifications[] = [
 
   {
 

@@ -5,7 +5,7 @@ export const skill_badges: SkillBadgeType = {
   c: "https://img.shields.io/badge/C-FFFFFF?style=for-the-badge&logo=c&logoColor=black",
   cplusplus:
     "https://img.shields.io/badge/C%2B%2B-FFFFFF?style=for-the-badge&logo=c%2B%2B&logoColor=black",
-  java: "https://img.shields.io/badge/Java-FFFFFF?style=for-the-badge&logo=openjdk",
+  java: "https://img.shields.io/badge/Java-FFFFFF?style=for-the-badge&logo=openjdk&logo=c%2B%2B&logoColor=black",
   php: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php",
   python:
     "https://img.shields.io/badge/Python-FFFFFF?style=for-the-badge&logo=python",

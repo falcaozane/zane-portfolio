@@ -1,5 +1,5 @@
 import React from 'react'
-import { certifications, projects } from '@/data/certifications'
+import { certifications } from '@/data/certifications'
 
 const Certifications = () => {
   return (
@@ -12,13 +12,13 @@ const Certifications = () => {
                 </span>
             </h3>
             <div className="grid bg-white gap-0.5 p-0.5 md:grid-cols-2">
-                {projects.map((project : certifications) => (
+                {certifications.map((project : certifications) => (
                 <a
                     key={`${project.company}-${project.post}`}
                     target="blank"
                     // Link to the certificate letter, or fallback to website
                     href={project.letter || project.website || '#'}
-                    className="duration-200 group flex items-center bg-orange-500 h-full w-full justify-between p-4 hover:bg-amber-500 hover:text-white hover:shadow-2xl hover:scale-105"
+                    className="duration-200 group flex items-center bg-amber-500 h-full w-full justify-between p-4 hover:bg-orange-500 hover:text-white hover:shadow-2xl hover:scale-105"
                 >
                     <div className="flex items-center gap-3">
                     <div className="avatar">
