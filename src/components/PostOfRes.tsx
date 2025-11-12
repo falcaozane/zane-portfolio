@@ -1,5 +1,5 @@
 import React from 'react'
-import { projects } from '@/data/projects'
+import { pos } from '@/data/pos'
 import { IconCertificate, IconWorldShare } from '@tabler/icons-react'
 
 const PostOfRes = () => {
@@ -13,17 +13,12 @@ const PostOfRes = () => {
                 </span>
             </h3>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                {projects.map((project) => (
+                {pos.map((project) => (
                 <div
                     className="duration-200 card-compact shadow-md card hover:shadow-xl text-amber-600 border-2 border-orange-400 hover:border-orange-300 bg-white"
                     key={`${project.company}-${project.post}`}
                 >
                     <div className="card-body">
-                    {/* <img
-                        className="rounded-full w-20 h-20 mb-2"
-                        src={project.image}
-                        alt={project.company}
-                    /> */}
                     <h2 className="card-title">{project.post}</h2>
                     <h3 className="flex items-center gap-1">
                         {project.company}
@@ -36,9 +31,9 @@ const PostOfRes = () => {
                             <IconWorldShare size={20} />
                         </a>
                     </h3>
-                    <h4 className="text-sm italic">{project.type}</h4>
+                    {/* <h4 className="text-sm italic">{project.company}</h4> */}
                     <p className="text-sm">
-                        {project.start} - {project.end}
+                        {project.startdate} - {project.enddate}
                     </p>
                     <div className="justify-end card-actions">
                         {project.letter &&
@@ -49,9 +44,6 @@ const PostOfRes = () => {
                             </button>
                             </a>
                         }
-                        {/* {project.ongoing && (
-                        <span className="badge badge-primary">Ongoing</span>
-                        )} */}
                     </div>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import Projects from "@/components/Projects";
 import PostOfRes from "@/components/PostOfRes";
 import Certifications from "@/components/Certifications";
 import Education from "@/components/Education";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <PostOfRes />
       <Certifications />
       <Education />
+      <Footer />
     </>
   );
 }

@@ -11,14 +11,14 @@ const Certifications = () => {
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
                 </span>
             </h3>
-            <div className="grid bg-base-200 gap-0.5 p-0.5 md:grid-cols-2">
+            <div className="grid bg-white gap-0.5 p-0.5 md:grid-cols-2">
                 {projects.map((project : certifications) => (
                 <a
                     key={`${project.company}-${project.post}`}
                     target="blank"
                     // Link to the certificate letter, or fallback to website
                     href={project.letter || project.website || '#'}
-                    className="duration-200 group flex items-center bg-base-100 h-full w-full justify-between p-4 hover:bg-amber-500 hover:text-white hover:shadow-2xl hover:scale-105"
+                    className="duration-200 group flex items-center bg-orange-500 h-full w-full justify-between p-4 hover:bg-amber-500 hover:text-white hover:shadow-2xl hover:scale-105"
                 >
                     <div className="flex items-center gap-3">
                     <div className="avatar">
