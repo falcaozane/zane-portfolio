@@ -10,6 +10,20 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      
+// Wikimedia Commons originals & thumbs
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        pathname: '/wikipedia/commons/**',
+      },
+      // Google-hosted Cloud logo on gstatic
+      {
+        protocol: 'https',
+        hostname: 'gstatic.com',
+        pathname: '/devrel-devsite/**',
+      },
+
     ],
   },
 };
