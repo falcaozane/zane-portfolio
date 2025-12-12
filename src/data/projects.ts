@@ -13,6 +13,29 @@ export type Project = {
 // 2. Your updated projects list, based on the "Projects" section of your resume
 export const projects: Project[] = [
   {
+    slug: 'doccrypt',
+    post: 'DocCrypt : AI-powered Secure Document Management Platform',
+    website: 'https://doc-crypt-aptos.vercel.app/',
+    type: 'Unfold 2k24 Blockchain Hackathon', // Inferred from context
+    date: 'Dec 2024',
+    technologies: [
+      'React',
+      'Tailwind CSS',
+      'ShadCN',
+      'RadixUI',
+      'Aptos',
+      'Pinata',
+      'IPFS',
+      'Langchain',
+      'Gemini( Google Gen A.I.)',
+      'Smart Contracts ( Move )',
+    ],
+    detailedDescription:
+      'Developed a decentralised, AI-powered platform for secure document storage, categorisation, digital signature, and natural language-based document interaction.',
+    demoLink:
+      'https://drive.google.com/file/d/1KnNaGDdDy1yXmMJITeSJ6fLnQact86oo/view',
+  },
+  {
     slug: 'legal-document-assistant',
     post: 'A.I powered Legal Document Assistant',
     type: 'Smart India Hackathon 23 (Group of 6)',
@@ -76,28 +99,5 @@ export const projects: Project[] = [
     ],
     detailedDescription:
       'Built AI-powered HR automation for resume parsing using OpenAI & NER models.',
-  },
-  {
-    slug: 'doccrypt',
-    post: 'DocCrypt : AI-powered Secure Document Management Platform',
-    website: 'https://doc-crypt-aptos.vercel.app/',
-    type: 'Unfold 2k24 Blockchain Hackathon', // Inferred from context
-    date: 'Dec 2024',
-    technologies: [
-      'React',
-      'Tailwind CSS',
-      'ShadCN',
-      'RadixUI',
-      'Aptos',
-      'Pinata',
-      'IPFS',
-      'Langchain',
-      'Gemini( Google Gen A.I.)',
-      'Smart Contracts ( Move )',
-    ],
-    detailedDescription:
-      'Developed a decentralised, AI-powered platform for secure document storage, categorisation, digital signature, and natural language-based document interaction.',
-    demoLink:
-      'https://drive.google.com/file/d/1KnNaGDdDy1yXmMJITeSJ6fLnQact86oo/view',
-  },
+  }
 ]

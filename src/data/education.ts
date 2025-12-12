@@ -18,7 +18,7 @@ export const education = [
     type: "Higher secondary education",
     start: "June 2019",
     end: "June 2021",
-    letter: "https://drive.google.com/file/d/1707kOKDgg7-anMMdfSwSS1Svg9oUeHD7/view?usp=sharing",
+    letter: "",
     skills: ["Next.js", "SQLite", "Pocketbase", "Recharts"],
   },
   {
@@ -31,7 +31,7 @@ export const education = [
     start: "June 2006",
     end: "June 2019",
     letter:
-      "https://drive.google.com/file/d/10WHIq1OnUl244AFBnENK9wsl5oCDd9YL/view?usp=sharing",
+      "",
     skills: [
       "Flutter",
       "Android",

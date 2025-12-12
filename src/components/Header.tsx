@@ -20,7 +20,7 @@ function Header() {
                     <li className='hover:bg-slate-50 rounded-md'><a>Skills</a></li>
                     <li className='hover:bg-slate-50 rounded-md'><a>Experience</a></li>
                     <li className='hover:bg-slate-50 rounded-md'><a>Projects</a></li>
-                    <li className='hover:bg-slate-50 rounded-md'><a>Achievements</a></li>
+                    {/* <li className='hover:bg-slate-50 rounded-md'><a>Achievements</a></li> */}
                     <li className='hover:bg-slate-50 rounded-md'><a>Position of Responsibility</a></li>
                     <li className='hover:bg-slate-50 rounded-md'><a>Certifications</a></li>
                     <li className='hover:bg-slate-50 rounded-md'><a>Education</a></li>

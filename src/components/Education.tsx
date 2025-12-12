@@ -8,7 +8,7 @@ const Education = () => {
         <div className="max-w-7xl mx-auto">
             <h3 className=" text-2xl lg:text-4xl font-extrabold text-orange-500 mb-12 relative pb-2 inline-block">
                 <span className="relative inline-block pb-1">
-                    Education
+                    EDUCATION
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
                 </span>
             </h3>
