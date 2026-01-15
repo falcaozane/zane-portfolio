@@ -8,7 +8,7 @@ import Zane from '../../public/Zane.jpg';
 
 const About = () => {
   return (
-    <div className="bg-gray-100 p-8">
+    <section id="about" className="bg-gray-100 p-8">
       <div className="max-w-7xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden lg:flex lg:items-center">
         {/* Left Section - Text Content */}
         <div className="p-8 lg:w-2/3">
@@ -62,7 +62,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

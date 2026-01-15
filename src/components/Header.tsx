@@ -1,67 +1,134 @@
-import React from 'react'
-import Image from "next/image";
-import { IconBriefcase, IconFileCertificate, IconFileDescription, IconHome, IconSchool, IconTools, IconUsersGroup, IconTrophy } from "@tabler/icons-react";
-import FZ from "../../public/fz.png";
+'use client';
+
+import React from 'react';
+import Image from 'next/image';
+import { Link } from 'react-scroll';
+import {
+  IconBriefcase,
+  IconFileCertificate,
+  IconInfoCircle,
+  IconSchool,
+  IconTools,
+  IconUsersGroup,
+  IconCode,
+} from '@tabler/icons-react';
+import FZ from '../../public/fz.png';
+
+// Navigation items configuration
+const navItems = [
+  { name: 'About', to: 'about', icon: IconInfoCircle },
+  { name: 'Skills', to: 'skills', icon: IconTools },
+  { name: 'Experience', to: 'experience', icon: IconBriefcase },
+  { name: 'Projects', to: 'projects', icon: IconCode },
+  { name: 'Position of Responsibility', to: 'por', icon: IconUsersGroup },
+  { name: 'Certifications', to: 'certifications', icon: IconFileCertificate },
+  { name: 'Education', to: 'education', icon: IconSchool },
+];
 
 function Header() {
+  // Close mobile drawer after clicking a link
+  const closeDrawer = () => {
+    const drawerToggle = document.getElementById('my-drawer-3') as HTMLInputElement;
+    if (drawerToggle) {
+      drawerToggle.checked = false;
+    }
+  };
+
   return (
     <div className="drawer">
-        <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col">
-            {/* Navbar */}
-            <div className="navbar w-full px-5">
-            <div className="mx-2 flex-1 px-3">
-                <Image src={FZ} alt="Logo" className="h-10 w-12" />
-            </div>
-            <div className="hidden flex-none lg:block">
-                <ul className="menu menu-horizontal text-orange-400 font-medium">
-                {/* Navbar menu content here */}
-                    <li className='hover:bg-slate-50 rounded-md'><a>Home</a></li>
-                    <li className='hover:bg-slate-50 rounded-md'><a>Skills</a></li>
-                    <li className='hover:bg-slate-50 rounded-md'><a>Experience</a></li>
-                    <li className='hover:bg-slate-50 rounded-md'><a>Projects</a></li>
-                    {/* <li className='hover:bg-slate-50 rounded-md'><a>Achievements</a></li> */}
-                    <li className='hover:bg-slate-50 rounded-md'><a>Position of Responsibility</a></li>
-                    <li className='hover:bg-slate-50 rounded-md'><a>Certifications</a></li>
-                    <li className='hover:bg-slate-50 rounded-md'><a>Education</a></li>
-                </ul>
-            </div>
-            <div className="flex-none lg:hidden">
-                <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-ghost btn-square">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    className="inline-block h-6 w-6 stroke-current bg-amber-600 rounded-sm text-white"
-                >
-                    <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                    ></path>
-                </svg>
-                </label>
-            </div>
-            </div>
-        </div>
-        <div className="drawer-side bg-transparent">
-            <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-            <ul className="menu bg-white fond-medium min-h-full w-80 text-orange-400">
-            {/* Sidebar content here */}
-                <li><a><IconHome className="mr-2 text-orange-400" /> Home</a></li>
-                <li><a><IconTools className="mr-2 text-orange-400" /> Skills</a></li>
-                <li><a><IconBriefcase className="mr-2 text-orange-400" /> Projects</a></li>
-                <li><a><IconFileDescription className="mr-2 text-orange-400" /> Experience</a></li>
-                <li><a><IconTrophy className="mr-2 text-orange-400" /> Achievements</a></li>
-                <li><a><IconUsersGroup className="mr-2 text-orange-400" /> Position of Responsibility</a></li>
-                <li><a><IconFileCertificate className="mr-2 text-orange-400" /> Certifications</a></li>
-                <li><a><IconSchool className="mr-2 text-orange-400" /> Education</a></li>
+      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content flex flex-col">
+        {/* Navbar */}
+        <div className="navbar w-full px-5">
+          <div className="mx-2 flex-1 px-3">
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
+              <Image src={FZ} alt="Logo" className="h-10 w-12" />
+            </Link>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden flex-none lg:block">
+            <ul className="menu menu-horizontal text-orange-400 font-medium">
+              {navItems.map((item) => (
+                <li key={item.to} className="hover:bg-slate-50 rounded-md">
+                  <Link
+                    to={item.to}
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}
+                    activeClass="text-orange-600 bg-orange-50"
+                    className="cursor-pointer transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="flex-none lg:hidden">
+            <label
+              htmlFor="my-drawer-3"
+              aria-label="open sidebar"
+              className="btn btn-ghost btn-square"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block h-6 w-6 stroke-current bg-amber-600 rounded-sm text-white"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </label>
+          </div>
         </div>
+      </div>
+
+      {/* Mobile Drawer */}
+      <div className="drawer-side z-50">
+        <label
+          htmlFor="my-drawer-3"
+          aria-label="close sidebar"
+          className="drawer-overlay"
+        />
+        <ul className="menu bg-white font-medium min-h-full w-80 text-orange-400 pt-4">
+          {navItems.map((item) => {
+            const Icon = item.icon;
+            return (
+              <li key={item.to}>
+                <Link
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  activeClass="text-orange-600 bg-orange-50"
+                  className="cursor-pointer"
+                  onClick={closeDrawer}
+                >
+                  <Icon className="mr-2 text-orange-400" size={20} />
+                  {item.name}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Header
-
+export default Header;

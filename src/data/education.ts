@@ -3,13 +3,10 @@ export const education = [
     institue: "Fr. Conceicao Rodrigues College of Engineering, Mumbai",
     website: "http://www.frcrce.ac.in/",
     post: "Bachelor of Engineering in Computer Engineering",
-    type: "Degree",
+    type: "Bachelor's Degree",
     start: "July 2021",
     end: "June 2025",
-    // letter: "https://drive.google.com/file/d/10WHIq1OnUl244AFBnENK9wsl5oCDd9YL/view?usp=sharing",
-    skills: [
-      "Java", "Spring Boot", "Microservices", "Docker", "Kubernetes", "AWS", "CI/CD"
-    ],
+    grade: "8.0 CGPA",
   },
   {
     institue: "Thomas Baptista Junior College, Papdy, Vasai",
@@ -18,8 +15,7 @@ export const education = [
     type: "Higher secondary education",
     start: "June 2019",
     end: "June 2021",
-    letter: "",
-    skills: ["Next.js", "SQLite", "Pocketbase", "Recharts"],
+    grade : "93.33%",
   },
   {
     institue: "St. Anthony's Convent High School, Vasai",
@@ -30,17 +26,6 @@ export const education = [
     type: "Secondary education",
     start: "June 2006",
     end: "June 2019",
-    letter:
-      "",
-    skills: [
-      "Flutter",
-      "Android",
-      "iOS",
-      "Firebase",
-      "REST APIs",
-      "UI/UX",
-      "Python",
-      "Django",
-    ],
+    grade : "88.60%",
   },  
 ];

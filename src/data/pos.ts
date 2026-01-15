@@ -19,9 +19,10 @@ export const pos: Pos[] = [
     company: 'GDSC-CRCE',
     startdate: 'July 2023',
     enddate:'May 2024',
+    website: 'https://gdsc-crce-2024.vercel.app/',
     letter:'',
     detailedDescription:
-      'Developed a multi-functional legal AI assistant for document creation, simplification & IPC chatbot.',
+      'Bit-N-Build\'24 International Hackathon\n\nI was actively involved in formulating the problem statements for this hackathon\n\nCoordinated with 300+ participants.',
     // No website or demo link provided in the resume for this one
   },
   {
@@ -30,8 +31,9 @@ export const pos: Pos[] = [
     company: 'GDSC CRCE', // Inferred from context
     startdate: 'July 2022',
     enddate:'May 2023',
+    website: 'https://www.instagram.com/gdsc_crce/',
     letter:'',
     detailedDescription:
-      'Utilised machine learning techniques for portfolio optimization, considering risk tolerance and historical data. Built a user-friendly interface (playground) for easy portfolio construction, rebalancing and visualization.',
+      'Managed end-to-end operations of a 24-hour Bit n Build Hackathon and seamlessly coordinated with 300+ participants.',
   }
 ]
