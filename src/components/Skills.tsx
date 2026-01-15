@@ -1,38 +1,34 @@
 /* eslint-disable @next/next/no-img-element */
+'use client';
 
-// src/components/SkillsCarousel.tsx
-'use client'; // This is a client component as it uses Splide.js and interactive elements.
 import React from 'react';
-// Add this import to resolve Splide types
-// @ts-expect-error  Ignore type errors for Splide imports
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-// Import the Splide core CSS
+// @ts-expect-error Ignore type errors for Splide imports
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-// Import the AutoScroll extension
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-// Import the skill badges data
 import { skill_badges, skill_badges_mono } from '@/data/skills';
-// Define TypeScript interfaces for skill data
+import { ChevronRight } from 'lucide-react'; // or use your icon library
+
 interface SkillItem {
   name: string;
-  icon: string; // Now a string to hold the Shields.io badge URL
+  icon: string;
 }
+
 interface SkillCategory {
   id: string;
   name: string;
-  icon: string; // Now a string to hold the Shields.io badge URL
   skills: SkillItem[];
 }
+
 const skillCategories: SkillCategory[] = [
   {
     id: 'languages',
     name: 'Languages',
-    icon: 'https://img.shields.io/badge/Languages-239120?style=flat&logo=codeigniter&logoColor=white',
     skills: [
       { name: 'C', icon: skill_badges.c },
       { name: 'C++', icon: skill_badges.cplusplus },
       { name: 'JavaScript', icon: skill_badges.javascript },
-      { name:'Java',icon:skill_badges_mono.java},
+      { name: 'Java', icon: skill_badges_mono.java },
       { name: 'Python', icon: skill_badges.python },
       { name: 'SQL', icon: skill_badges.sql },
       { name: 'TypeScript', icon: skill_badges.typescript },
@@ -41,7 +37,6 @@ const skillCategories: SkillCategory[] = [
   {
     id: 'frameworks',
     name: 'Frameworks & Libraries',
-    icon: 'https://img.shields.io/badge/Frameworks-61DAFB?style=flat&logo=react&logoColor=white',
     skills: [
       { name: 'Next.js', icon: skill_badges.nextjs },
       { name: 'React', icon: skill_badges.reactjs },
@@ -51,19 +46,11 @@ const skillCategories: SkillCategory[] = [
       { name: 'Langchain', icon: skill_badges_mono.langchain },
       { name: 'Flask', icon: skill_badges.flask },
       { name: 'Fast-API', icon: skill_badges.fastapi },
-      { name: 'Streamlit', icon: skill_badges.streamlit },
-      { name: 'Pandas', icon: skill_badges.pandas },
-      { name: 'NumPy', icon: skill_badges.numpy },
-      { name: 'Matplotlib', icon: skill_badges.matplotlib },
-      { name: 'Plotly', icon: skill_badges.plotly },
-      { name: 'SpaCy', icon: skill_badges.spacy },
-      { name: 'Beautiful Soup 4', icon: skill_badges.beautifulsoup },
     ],
   },
   {
     id: 'platforms',
     name: 'Platforms & Tools',
-    icon: 'https://img.shields.io/badge/Tools-007ACC?style=flat&logo=visualstudiocode&logoColor=white',
     skills: [
       { name: 'VScode', icon: skill_badges.vscode },
       { name: 'Git', icon: skill_badges.git },
@@ -81,7 +68,6 @@ const skillCategories: SkillCategory[] = [
   {
     id: 'blockchain',
     name: 'Blockchain',
-    icon: skill_badges.blockchain || 'https://img.shields.io/badge/Blockchain-blueviolet?style=flat&logo=bitcoin&logoColor=white',
     skills: [
       { name: 'NEXT.JS', icon: skill_badges.nextjs },
       { name: 'React', icon: skill_badges.reactjs },
@@ -90,81 +76,120 @@ const skillCategories: SkillCategory[] = [
       { name: 'IPFS', icon: skill_badges.ipfs },
     ],
   },
-  // Add more categories as needed, find more badges at https://shields.io/badges
+  {
+    id: 'ai-ml-ds',
+    name: 'AI / ML / Data Science',
+    skills: [
+      { name: 'TensorFlow', icon: skill_badges.tensorflow },
+      { name: 'PyTorch', icon: skill_badges.pytorch },
+      { name: 'Scikit-learn', icon: skill_badges.scikitlearn },
+      { name: 'Keras', icon: skill_badges.keras },
+      { name: 'OpenAI', icon: skill_badges.openai },
+      { name: 'Langchain', icon: skill_badges_mono.langchain },
+      { name: 'Huggingface', icon: skill_badges.huggingface },
+      { name: 'Pandas', icon: skill_badges.pandas },
+      { name: 'NumPy', icon: skill_badges.numpy },
+      { name: 'Matplotlib', icon: skill_badges.matplotlib },
+      { name: 'Plotly', icon: skill_badges.plotly },
+      { name: 'Jupyter', icon: skill_badges.jupyter },
+    ],
+  },
 ];
+
 const SkillsCarousel: React.FC = () => {
   return (
-    <section id="skills" className="py-12 bg-gray-100">
-      <div className="max-w-7xl mx-auto">
-          <h3 className="text-2xl lg:text-4xl font-extrabold text-orange-500 mb-12 relative pb-2 inline-block px-8">
-              <span className="relative inline-block pb-1">
-                SKILLS
-              <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
-              </span>
-          </h3>
-        <Splide
-          options={{
-            type: 'loop',
-            perPage: 4, // Show 4 cards on larger screens
-            gap: '1rem',
-            arrows: false,
-            pagination: true,
-            drag: 'free',
-            focus: 'center', // Often used with drag: 'free'
-            breakpoints: {
-              1280: {
-                perPage: 3, // 3 cards on extra large desktops
-              },
-              1024: {
-                perPage: 2, // 2 cards on desktops/laptops
-              },
-              768: {
-                perPage: 1, // 1 card on tablets
-                arrows: false, // Hide arrows on smaller screens
-              },
-            },
-            // AutoScroll options
-            autoScroll: {
-              speed: 1, // Adjust speed as needed (lower is slower)
-              pauseOnHover: true, // Pause autoscroll on hover
-              pauseOnFocus: false, // Don't pause on focus (can be true if desired)
-            },
-          }}
-          extensions={{ AutoScroll }} // Mount the AutoScroll extension
-          aria-label="My Skills Carousel"
-          className="splide-custom-arrows" // Custom class for styling Splide arrows
-        >
+    <section id="skills" className="w-full pt-24 pb-16 bg-gray-100">
+      {/* Header - Constrained width */}
+      <div className="w-full max-w-7xl mx-auto mb-12">
+        <h3 className="text-2xl lg:text-4xl font-extrabold text-orange-500 relative pb-2 inline-block">
+          <span className="relative inline-block pb-1">
+            SKILLS
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
+          </span>
+        </h3>
+      </div>
+
+      {/* Carousel - Full width */}
+      <Splide
+        options={{
+          gap: 16,
+          type: 'loop',
+          drag: 'free',
+          focus: 'center',
+          autoWidth: true,
+          arrows: true,
+          pagination: false,
+          autoScroll: {
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            rewind: false,
+            speed: 1,
+          },
+        }}
+        extensions={{ AutoScroll }}
+        hasTrack={false}
+        aria-label="Skills Carousel"
+      >
+        <SplideTrack>
           {skillCategories.map((category) => (
-            <SplideSlide key={category.id}>
-              <div className="bg-white rounded-xl p-5 flex flex-col items-start h-full duration-300 border-2 border-orange-400 z-10 shadow-lg hover:shadow-2xl">
-                <div className="flex items-center space-x-3 mb-6">
-                  <h3 className="text-2xl font-bold text-orange-500 flex items-center">
-                    {category.name}
-                  </h3>
-                </div>
+            <SplideSlide key={category.id} className="h-[320px] w-72">
+              {/* Card */}
+              <div className="w-full h-full bg-white rounded-xl p-6 border-2 border-orange-400 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                {/* Category Title */}
+                <h4 className="text-xl font-bold text-orange-500 mb-5">
+                  {category.name}
+                </h4>
+
+                {/* Skills Badges */}
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, index) => (
                     <div
                       key={index}
-                      className="flex rounded-full items-center text-gray-700 text-sm font-medium border-1 border-orange-400 whitespace-nowrap transition-all duration-200 hover:border-1 hover:border-orange-300 cursor-pointer"
+                      className="overflow-hidden rounded-full border border-amber-400 hover:border-orange-600 transition-colors duration-200"
                     >
-                      {/* Use img tag for Shields.io badges for individual skills */}
                       <img
                         src={skill.icon}
-                        alt={`${skill.name} icon`}
-                        className="h-6 w-auto rounded-full" // Adjust size as needed
-                        onError={(e) => { e.currentTarget.src = 'https://placehold.co/16x16/cccccc/ffffff?text=X'; }} // Fallback image
+                        alt={skill.name}
+                        className="h-6 w-auto"
+                        onError={(e) => {
+                          e.currentTarget.src = `https://placehold.co/80x24/f97316/ffffff?text=${skill.name}`;
+                        }}
                       />
-                      
                     </div>
                   ))}
                 </div>
               </div>
             </SplideSlide>
           ))}
-        </Splide>
-      </div>
+        </SplideTrack>
+
+        {/* Custom Arrows */}
+        <div className="splide__arrows">
+          <button className="splide__arrow splide__arrow--prev !bg-orange-500 !opacity-100 hover:!bg-orange-600">
+            <ChevronRight className="w-5 h-5 text-white" />
+          </button>
+          <button className="splide__arrow splide__arrow--next !bg-orange-500 !opacity-100 hover:!bg-orange-600">
+            <ChevronRight className="w-5 h-5 text-white" />
+          </button>
+        </div>
+      </Splide>
+
+      {/* Custom Splide Styles */}
+      <style jsx global>{`
+        #skills .splide__arrow {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+        }
+        #skills .splide__arrow svg {
+          fill: white;
+        }
+        #skills .splide__arrow--prev svg {
+          transform: rotate(180deg);
+        }
+      `}</style>
     </section>
   );
 };
+
 export default SkillsCarousel;

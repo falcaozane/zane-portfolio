@@ -57,6 +57,8 @@ export const projects: Project[] = [
     detailedDescription:
       'Developed a multi-functional legal AI assistant for document creation, simplification & IPC chatbot.',
     // No website or demo link provided in the resume for this one
+    demoLink:
+      'https://drive.google.com/file/d/1joRqaG6UpNXENyAP-gnrHsGi2XPlJIpC/view',
   },
   {
     slug: 'stock-allocation-engine',
@@ -77,6 +79,8 @@ export const projects: Project[] = [
     ],
     detailedDescription:
       'Utilised machine learning techniques for portfolio optimization, considering risk tolerance and historical data. Built a user-friendly interface (playground) for easy portfolio construction, rebalancing and visualization.',
+    demoLink:
+      'https://www.linkedin.com/feed/update/urn:li:activity:7220024802537795584?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3Bj5bXQ%2Fc4TMqjFuaFwWv7Hg%3D%3D',
   },
   {
     slug: 'robo-hr',
