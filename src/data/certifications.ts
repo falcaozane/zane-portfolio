@@ -18,6 +18,51 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
+    slug: 'microsoft-azure-ai-fundamentals-ai-900',
+    company: 'Microsoft',
+    website: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/',
+    post: 'Microsoft Certified: Azure AI Fundamentals (AI-900)',
+    type: 'Certification',
+    start: 'Jan 2026',
+    end: 'No expiry',
+    letter:
+      'https://learn.microsoft.com/en-us/users/zanefalcao-2780/credentials/9b1b2e160238f00f',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg',
+    credentialId: '9B1B2E160238F00F',
+    technologies: [
+      'AI Fundamentals',
+      'Machine Learning',
+      'Azure AI Services',
+      'Azure Machine Learning',
+      'Responsible AI'
+    ],
+    detailedDescription:
+      'Validates foundational knowledge of AI and ML concepts, responsible AI, and core Azure AI services such as Vision, NLP, and decision-making tools.'
+  },
+  {
+    slug: 'microsoft-azure-data-fundamentals-dp-900',
+    company: 'Microsoft',
+    website: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/',
+    post: 'Microsoft Certified: Azure Data Fundamentals (DP-900)',
+    type: 'Certification',
+    start: 'Jan 2026',
+    end: 'No expiry',
+    letter:
+      'https://learn.microsoft.com/en-us/users/zanefalcao-2780/credentials/8c0cc8b13330aaba',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg',
+    credentialId: '8C0CC8B13330AABA',
+    technologies: [
+      'Data Fundamentals',
+      'Azure SQL',
+      'Azure Cosmos DB',
+      'Data Warehousing',
+      'Analytics',
+      'ETL & Data Pipelines'
+    ],
+    detailedDescription:
+      'Covers foundational data concepts, relational and non-relational data, analytics workloads, and core data services within the Azure ecosystem.'
+  },
+  {
     slug: 'microsoft-azure-fundamentals-az-900',
     company: 'Microsoft',
     website: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/',
