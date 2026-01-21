@@ -8,8 +8,9 @@ import Zane from '../../public/Zane.jpg';
 
 const About = () => {
   return (
-    <section id="about" className="bg-gray-100 p-8">
-      <div className="max-w-7xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden lg:flex lg:items-center">
+    <section id="about" className="bg-gray-100">
+      <div className='px-4 py-8'>
+        <div className="max-w-7xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden lg:flex lg:items-center">
         {/* Left Section - Text Content */}
         <div className="p-8 lg:w-2/3">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
@@ -60,6 +61,7 @@ const About = () => {
               className="rounded-lg shadow-lg"
             />
           </div>
+        </div>
         </div>
       </div>
     </section>

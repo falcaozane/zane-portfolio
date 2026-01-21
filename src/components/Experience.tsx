@@ -4,15 +4,16 @@ import { IconCertificate, IconWorldShare } from '@tabler/icons-react'
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-10 bg-gray-100 px-8">
-        <div className="max-w-7xl mx-auto">
-            <h3 className=" text-2xl lg:text-4xl font-extrabold text-orange-500 mb-12 relative pb-2 inline-block">
+    <section id="experience" className="py-10 bg-gray-100">
+            <div className="w-full max-w-7xl mx-auto mb-5 md:mb-12 px-4 md:px-0">
+                <h3 className=" text-2xl lg:text-4xl font-extrabold text-orange-500 mb-12 relative pb-2 inline-block">
                 <span className="relative inline-block pb-1">
                     WORK EXPERIENCE
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
                 </span>
-            </h3>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                </h3>
+            </div>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 md:px-8">
                 {experiences.map((experience) => (
                 <div
                     className="duration-200 card-compact shadow-md card hover:shadow-xl text-amber-600 border-2 border-orange-400 hover:border-orange-300 bg-white"
@@ -57,7 +58,6 @@ const Experience = () => {
                 </div>
                 ))}
             </div>
-        </div>
     </section>
   )
 }

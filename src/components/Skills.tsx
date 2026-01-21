@@ -100,7 +100,7 @@ const SkillsCarousel: React.FC = () => {
   return (
     <section id="skills" className="w-full pt-24 pb-16 bg-gray-100">
       {/* Header - Constrained width */}
-      <div className="w-full max-w-7xl mx-auto mb-12 px-4 md:px-8">
+      <div className="w-full max-w-7xl mx-auto mb-12 px-4 md:px-0">
         <h3 className="text-2xl lg:text-4xl font-extrabold text-orange-500 relative pb-2 inline-block">
           <span className="relative inline-block pb-1">
             SKILLS
