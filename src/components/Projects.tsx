@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-10 bg-gray-100 px-8">
+    <section id="projects" className="py-10 bg-gray-100 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h3 className=" text-2xl lg:text-4xl font-extrabold text-orange-500 mb-12 relative pb-2 inline-block">
           <span className="relative inline-block pb-1">

@@ -1,6 +1,8 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import { IconFileCv } from '@tabler/icons-react';
+import {TypeAnimation} from 'react-type-animation';
 
 import Zane from '../../public/Zane.jpg';
 
@@ -14,13 +16,26 @@ const About = () => {
         {/* Left Section - Text Content */}
         <div className="p-8 lg:w-2/3">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            Hello I am Zane Falcao
+            Hello I am Zane Vijay Falcao
           </h1>
           <h2 className="text-2xl font-semibold text-orange-500 mb-4">
-            Full-Stack WebDeveloper.
+            <TypeAnimation sequence={[
+                'Full-Stack Developer',
+                2000,
+                'Cloud Engineer',
+                2000,
+                'Generative A.I Developer',
+                2000,
+              ]} 
+              speed={50}
+              className='text-orange-500'
+              wrapper='span'
+              repeat={Infinity}
+              />
+              .
           </h2>
           <p className="text-lg text-gray-700 mb-6">
-            Strong engineering professional, completed Bachelor of Engineering focused in Computer Engineering from Fr. Conceicao Rodrigues College of Engineering.
+            Strong engineering professional, completed Bachelor of Engineering focused in Computer Engineering from Fr. Conceicao Rodrigues College of Engineering, Mumbai University.
           </p>
 
           {/* Buttons */}
