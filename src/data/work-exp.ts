@@ -1,15 +1,16 @@
 export const experiences = [
   {
-    company: "Capgemini India",
+    company: "Capgemini",
     website: "https://www.capgemini.com/in-en/",
-    post: "Software Engineer - Analyst A4",
+    post: "Software Engineer",
     type: "Full-Time",
     start: "September 2025",
     end: "Present",
-    // letter: "https://drive.google.com/file/d/10WHIq1OnUl244AFBnENK9wsl5oCDd9YL/view?usp=sharing",
     skills: [
-      "Java", "Spring Boot", "Microservices", "Docker", "Kubernetes", "AWS", "CI/CD"
+      "Automation Testing", "Java", "Selenium", "Playwright", "JIRA", "Excel", "STLC", "Postman", "Azure"
     ],
+    description: "Performed Automation & Functional Testing on client applications focusing on Bug Reporting & Integration.",
+    location: "Mumbai, India (Hybrid)",
   },
   {
     company: "Arcon",
@@ -17,12 +18,16 @@ export const experiences = [
     post: "Quality Assurance Intern",
     type: "Internship",
     start: "February 2025",
-    end: "August 2025",
+    end: "July 2025",
     letter: "https://drive.google.com/file/d/1707kOKDgg7-anMMdfSwSS1Svg9oUeHD7/view?usp=sharing",
-    skills: ["Next.js", "SQLite", "Pocketbase", "Recharts"],
+    skills: [
+      "Manual Testing", "JIRA", "Excel", "STLC", "CLI", "Bug Reporting", "SSO", "Database Connectors", "Information Security"
+    ],
+    description: "Performed Manual & Functional Testing on Converged Identity, focusing on Bug Reporting & Integration.",
+    location: "Andheri, Mumbai, India",
   },
   {
-    company: "Ignitus Network",
+    company: "Ignitus Networks",
     image:
       "https://media.licdn.com/dms/image/C4D0BAQFwq94aaHO6Mw/company-logo_200_200/0/1657880937495?e=1695254400&v=beta&t=uc1-RlDWy8O5JaJtK5zsws3yJvgW3kJWvdlDn2hy_YE",
     website: "",
@@ -33,15 +38,10 @@ export const experiences = [
     letter:
       "https://drive.google.com/file/d/10WHIq1OnUl244AFBnENK9wsl5oCDd9YL/view?usp=sharing",
     skills: [
-      "Flutter",
-      "Android",
-      "iOS",
-      "Firebase",
-      "REST APIs",
-      "UI/UX",
-      "Python",
-      "Django",
+      "Next.js", "React.js", "Tailwind CSS", "Solidity", "Remix IDE", "Hardhat", "Ethers.js", "Web3.js", "IPFS", "Openzeppelin"
     ],
+    description: "Developed decentralized applications (dApps) for EVM-compatible blockchains, including Ethereum, Celo, XDC, and Fractal.",
+    location: "Remote",
   },
   {
     company: "DigiHelic Solutions Pvt. Ltd.",
@@ -50,13 +50,14 @@ export const experiences = [
     website: "https://digihelic.com/",
     post: "Web Developer Intern",
     type: "Internship",
-    start: "July 2022",
-    end: "November 2022",
+    start: "December 2023",
+    end: "March 2024",
     letter:
       "https://drive.google.com/file/d/1cBWE5BZ1Kq7XbPw9_NxefVjEgYs2BWlD/view?usp=sharing",
     skills: [
-      "Next.js", "SQLite", "Pocketbase", "Recharts"
+      "Next.js", "React", "Tailwind CSS", "MongoDB", "Clerk Auth"
     ],
-  },
-  
+    description: "Converted Figma designs to production-ready UIs for an Immigration Portal project.",
+    location: "Remote",
+  }
 ];
