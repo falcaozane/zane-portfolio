@@ -44,7 +44,7 @@ const Certifications: React.FC = () => {
 
                 {/* Text block (min-w-0 to prevent push-out) */}
                 <div className="flex-1 min-w-0 flex flex-col ml-2 sm:ml-4">
-                  <h2 className="font-bold text-base sm:text-lg lg:text-xl leading-tight line-clamp-2">
+                  <h2 className="font-bold text-black hover:text-white sm:text-lg lg:text-xl leading-tight line-clamp-2">
                     {item.post}
                   </h2>
                   <p className="opacity-90 text-sm sm:text-base truncate">{item.company}</p>

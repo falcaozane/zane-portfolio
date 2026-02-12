@@ -64,7 +64,7 @@ export const projects: Project[] = [
     slug: 'stock-allocation-engine',
     post: 'A.I based Stock Allocation Engine',
     website: 'https://nse-stocks-portfolio-allocation.streamlit.app/',
-    type: 'TIAA RETIRE-AI-THON PROJECT', // Inferred from context
+    type: 'TIAA RETIRE-AI-THON WINNER PROJECT', // Inferred from context
     date: 'May 2024',
     technologies: [
       'Python',

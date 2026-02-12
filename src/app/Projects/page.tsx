@@ -6,7 +6,7 @@ import { IconArrowUpRight, IconCalendar, IconDeviceLaptop, IconArrowLeft } from 
 
 export default function AllProjectsPage() {
   return (
-    <section id="projects" className="py-20 bg-[#fafafa] px-6 sm:px-10 min-h-screen">
+    <section id="projects" className="py-20 bg-gray-100 px-6 sm:px-10 min-h-screen">
       <div className="max-w-7xl mx-auto">
         
         {/* Navigation - Back to Home */}
