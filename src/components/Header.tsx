@@ -11,6 +11,7 @@ import {
   IconTools,
   IconUsersGroup,
   IconCode,
+  IconTrophy,
 } from '@tabler/icons-react';
 import FZ from '../../public/fz.png';
 
@@ -20,6 +21,7 @@ const navItems = [
   { name: 'Skills', to: 'skills', icon: IconTools },
   { name: 'Experience', to: 'experience', icon: IconBriefcase },
   { name: 'Projects', to: 'projects', icon: IconCode },
+  { name: 'Achievements', to: 'achievements', icon: IconTrophy },
   { name: 'Position of Responsibility', to: 'por', icon: IconUsersGroup },
   { name: 'Certifications', to: 'certifications', icon: IconFileCertificate },
   { name: 'Education', to: 'education', icon: IconSchool },

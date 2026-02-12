@@ -8,6 +8,7 @@ import Certifications from "@/components/Certifications";
 import Education from "@/components/Education";
 import Footer from "@/components/Footer";
 import Socials from "@/components/Socials";
+import Achievements from "@/components/Achievements";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Projects />
+      <Achievements />
       <PostOfRes />
       <Certifications />
       <Education />
