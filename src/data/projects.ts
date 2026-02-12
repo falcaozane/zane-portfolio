@@ -102,6 +102,108 @@ export const projects: Project[] = [
       'PyMuPDF',
     ],
     detailedDescription:
-      'Built AI-powered HR automation for resume parsing using OpenAI & NER models.',
+      'A.I Resume Parsing & Candidate Ranking System. Built AI-powered HR automation for resume parsing using OpenAI & NER models. ',
+  },
+  {
+  slug: 'foodcheck-ai',
+  post: 'FoodCheckAI: Reducing Food Waste Through Smart Tracking & AI',
+  website: 'https://devfolio.co/projects/foodcheckai-3d89',
+  type: 'Technovate2.0 S.P.I.T Hackathon (Group of 6)', // Inferred from context
+  date: 'Jan 2025',
+  technologies: [
+    'Django',
+    'Kotlin',
+    'OpenCV',
+    'WebXR',
+    'Twilio',
+    'Gemini 1.5 Flash',
+    'Groq',
+    'CNN (Color Detection)',
+    'OCR',
+  ],
+  detailedDescription:
+    'India is the second-largest food producer, yet wastes 20% of its food annually. FoodCheckAI is a "Phygital" solution that tracks household food quality and connects surplus restaurant food with NGOs to minimize wastage.',
+  demoLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7262698273885323266/',
+  // keyFeatures: [
+  //   'Voice Engine: Hands-free food logging via natural language.',
+  //   'Real-time Fridge Monitoring: CNN-based quality and expiry tracking.',
+  //   'AR AI Chef: Step-by-step 3D guided recipes using expiring items.',
+  //   'NGO Distribution: Route-optimized donation platform for surplus food.',
+  // ],
+  // challenges: [
+  //   'Implementing real-time tracking of food quality using CNN and color detection.',
+  //   'Developing a responsive and low-latency Web AR Chef AI.',
+  //   'Optimizing complex delivery routes for NGO-based food distribution.',
+  // ],
+  },
+  {
+  slug: 'bhagavad-gita-gpt',
+  post: 'Bhagavad Gita GPT: AI-Powered Spiritual RAG Assistant',
+  website: 'https://lucifer7210-sankrit-llm-bhagvad-gita.hf.space/',
+  type: 'College Project (Fr. CRCE)',
+  date: 'Jan 2025 – Feb 2025',
+  technologies: [
+    'Langchain',
+    'ChromaDB',
+    'Hugging Face',
+    'LLMs',
+    'Vector Databases',
+    'Generative AI',
+    'Git',
+  ],
+  detailedDescription:
+    'Developed a Retrieval-Augmented Generation (RAG) application focused on the Bhagavad Gita, utilizing a comprehensive dataset encompassing all chapters in Sanskrit, English, and Hindi. The system enables semantic search and conversational interaction with ancient scriptures, providing contextually grounded responses.',
+  demoLink: 'https://drive.google.com/file/d/1LLQY_KapLlBaTtiYnwqocXyZJrQuhJGi/view',
+  // keyFeatures: [
+  //   'Multilingual Dataset: Full support for Sanskrit, English, and Hindi text translations.',
+  //   'RAG Implementation: Utilizes Langchain and ChromaDB for efficient document retrieval and context window management.',
+  //   'Vector Database: High-dimensional embeddings stored in ChromaDB for fast, semantic similarity searches.',
+  //   'Hugging Face Deployment: Hosted as an interactive space for public access.',
+  // ],
+  // challenges: [
+  //   'Ensuring semantic alignment between Sanskrit transliterations and modern Hindi/English translations.',
+  //   'Optimizing the vector store retrieval to ensure verse context is preserved during generation.',
+  // ],
+  },
+  {
+  slug: 'construction-material-tracking',
+  post: 'Construction Material Tracking on Blockchain',
+  website: 'https://construction-material-tracking-dapp.vercel.app/',
+  type: 'Blockchain Project (Fr. CRCE) for Sem 7',
+  date: 'Sep 2024 – Oct 2024',
+  technologies: [
+    'Solidity',
+    'Ethereum',
+    'Ethers.js',
+    'Next.js',
+    'TypeScript',
+    'Tailwind CSS',
+    'ShadCN',
+    'MetaMask',
+    'Git',
+  ],
+  demoLink: 'https://www.linkedin.com/in/zane-falcao-014a41247/overlay/Project/1233871153/treasury/?profileId=ACoAAD0zMtABUGsox_1EgbtjnbpKhK1MYC9MGiQ',
+  detailedDescription:
+    'Developed a decentralized application (dApp) designed to bring transparency and traceability to the construction material supply chain. Built with Solidity smart contracts on the Ethereum blockchain, the platform enables real-time tracking of material lifecycles—from supplier to construction site—while ensuring data integrity and secure interactions via MetaMask and Ethers.js.',
+  },
+  {
+  slug: 'dzillow',
+  post: 'Dzillow: Decentralized Real Estate Marketplace',
+  website: 'https://realestate-marketplace-zane.vercel.app/',
+  type: 'Blockchain Project',
+  date: 'Jun 2024',
+  technologies: [
+    'Solidity',
+    'Core Chain',
+    'IPFS',
+    'Next.js',
+    'Ethereum',
+    'Tailwind CSS',
+    'Blockchain',
+    'Git',
+  ],
+  detailedDescription:
+    'Developed Dzillow, a decentralized real-estate marketplace built on the Core Chain blockchain. The platform utilizes Solidity for smart contract development and IPFS for decentralized storage of property metadata, ensuring a transparent, secure, and tamper-proof environment for real estate listings and transactions.',
   }
+  
 ]

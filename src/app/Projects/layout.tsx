@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import React from 'react'
 
 export default function ProjectsLayout({
@@ -9,6 +10,7 @@ export default function ProjectsLayout({
   return (
     <>
       {children}
+      <Footer />
     </>
   )
 }
