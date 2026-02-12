@@ -19,7 +19,7 @@ import FZ from '../../public/fz.png';
 const navItems = [
   { name: 'About', to: 'about', icon: IconInfoCircle },
   { name: 'Skills', to: 'skills', icon: IconTools },
-  { name: 'Experience', to: 'experience', icon: IconBriefcase },
+  { name: 'Experience', to: 'work-experience', icon: IconBriefcase },
   { name: 'Projects', to: 'projects', icon: IconCode },
   { name: 'Achievements', to: 'achievements', icon: IconTrophy },
   { name: 'Position of Responsibility', to: 'por', icon: IconUsersGroup },
