@@ -13,6 +13,33 @@ export type Project = {
 // 2. Your updated projects list, based on the "Projects" section of your resume
 export const projects: Project[] = [
   {
+  slug: 'fintel-ai',
+  post: 'Fintel A.I: Agentic Financial Intelligence for Indian Markets',
+  website: 'https://fintel-agents.vercel.app/',
+  demoLink: 'https://www.youtube.com/watch?v=7hOBj5KySk4&feature=youtu.be',
+  type: 'Mumbai Hacks Hackathon Project',
+  date: 'Nov 2025',
+  technologies: [
+    'Python',
+    'Kotlin',
+    'FastAPI',
+    'FastMCP',
+    'Next.js',
+    'OpenAI',
+    'SwarmsAPI',
+    'Gemini',
+    'Hugging Face',
+    'Android Room',
+    'Yahoo Finance',
+    'n8n',
+    'Tailwind CSS',
+    'ShadCN',
+    'Streamlit',
+  ],
+    detailedDescription:
+      'Fintel is an AI-powered financial intelligence mobile app designed to eliminate manual expense tracking by automatically reading UPI transaction SMS notifications in real-time. Utilizing a team of specialized agents, it classifies transactions, analyzes cashflow, and optimizes budgets while keeping data encrypted locally via SQLCipher. The platform extends into an investment engine for the Indian market, unifying portfolio analysis, mutual fund evaluation, and SEBI-aware risk management through an MCP-driven agentic tool selection layer. \n \n https://www.canva.com/design/DAG5_nGzA9E/xjAos89R6OImdoqZItYeEg/view',
+  },
+  {
     slug: 'doccrypt',
     post: 'DocCrypt : AI-powered Secure Document Management Platform',
     website: 'https://doc-crypt-aptos.vercel.app/',
