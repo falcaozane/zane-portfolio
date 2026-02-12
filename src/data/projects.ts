@@ -169,7 +169,7 @@ export const projects: Project[] = [
   slug: 'construction-material-tracking',
   post: 'Construction Material Tracking on Blockchain',
   website: 'https://construction-material-tracking-dapp.vercel.app/',
-  type: 'Blockchain Project (Fr. CRCE) for Sem 7',
+  type: 'Blockchain Project (Fr. CRCE)',
   date: 'Sep 2024 – Oct 2024',
   technologies: [
     'Solidity',
