@@ -19,7 +19,7 @@ export const experiences = [
     type: "Internship",
     start: "February 2025",
     end: "July 2025",
-    letter: "https://drive.google.com/file/d/1707kOKDgg7-anMMdfSwSS1Svg9oUeHD7/view?usp=sharing",
+    letter: "",
     skills: [
       "Manual Testing", "JIRA", "Excel", "STLC", "CLI", "Bug Reporting", "SSO", "Database Connectors", "Information Security"
     ],
@@ -36,7 +36,7 @@ export const experiences = [
     start: "June 2024",
     end: "September 2024",
     letter:
-      "https://drive.google.com/file/d/10WHIq1OnUl244AFBnENK9wsl5oCDd9YL/view?usp=sharing",
+      "",
     skills: [
       "Next.js", "React.js", "Tailwind CSS", "Solidity", "Remix IDE", "Hardhat", "Ethers.js", "Web3.js", "IPFS", "Openzeppelin"
     ],
@@ -53,7 +53,7 @@ export const experiences = [
     start: "December 2023",
     end: "March 2024",
     letter:
-      "https://drive.google.com/file/d/1cBWE5BZ1Kq7XbPw9_NxefVjEgYs2BWlD/view?usp=sharing",
+      "",
     skills: [
       "Next.js", "React", "Tailwind CSS", "MongoDB", "Clerk Auth"
     ],
