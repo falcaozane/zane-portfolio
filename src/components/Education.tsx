@@ -17,7 +17,7 @@ const Education = () => {
           {education.map((degree) => (
             <div
               key={`${degree.institue}-${degree.post}`}
-              className="group relative bg-white rounded-xl border-2 border-orange-400 p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:border-orange-500 hover:-translate-y-1"
+              className="group relative bg-white rounded-xl border-2 border-orange-400 overflow-hidden p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:border-orange-500 hover:-translate-y-1"
             >
               {/* Accent bar */}
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-t-xl" />
