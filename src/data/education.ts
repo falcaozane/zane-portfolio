@@ -1,6 +1,6 @@
 export const education = [
   {
-    institue: "Fr. Conceicao Rodrigues College of Engineering, Mumbai",
+    institue: "Fr. Conceicao Rodrigues College of Engineering, Banra, Mumbai",
     website: "http://www.frcrce.ac.in/",
     post: "Bachelor of Engineering in Computer Engineering",
     type: "Bachelor's Degree",
