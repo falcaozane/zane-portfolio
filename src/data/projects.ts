@@ -18,7 +18,7 @@ export const projects: Project[] = [
   website: 'https://fintel-agents.vercel.app/',
   demoLink: 'https://www.youtube.com/watch?v=7hOBj5KySk4&feature=youtu.be',
   type: 'Mumbai Hacks Hackathon Project',
-  date: 'Nov 2025',
+  date: 'Sept 2025 - Nov 2025',
   technologies: [
     'Python',
     'Kotlin',

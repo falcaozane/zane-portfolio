@@ -27,7 +27,7 @@ const achievements = [
     detail: "Second place in technical implementation and problem solving.",
   },
   {
-    title: "Unfold 2k24 Hackathon Finalist",
+    title: "Unfold 2k24 Hackathon Finalist — Bangalore",
     detail: "Top finalist in the premier blockchain challenge organized by CoinDCX.",
   },
 ];
