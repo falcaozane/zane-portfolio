@@ -105,7 +105,7 @@ export const projects: Project[] = [
       'Flask',
     ],
     detailedDescription:
-      'Utilised machine learning techniques for portfolio optimization, considering risk tolerance and historical data. Built a user-friendly interface (playground) for easy portfolio construction, rebalancing and visualization.',
+      'Utilised machine learning techniques for portfolio optimization, considering risk tolerance and historical data. Built a user-friendly interface (playground) for easy portfolio construction, rebalancing and visualization.\nPost Hackathon, I have kept updating the project with new features and optimizations.',
     demoLink:
       'https://www.linkedin.com/feed/update/urn:li:activity:7220024802537795584?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3Bj5bXQ%2Fc4TMqjFuaFwWv7Hg%3D%3D',
   },
@@ -231,6 +231,61 @@ export const projects: Project[] = [
   ],
   detailedDescription:
     'Developed Dzillow, a decentralized real-estate marketplace built on the Core Chain blockchain. The platform utilizes Solidity for smart contract development and IPFS for decentralized storage of property metadata, ensuring a transparent, secure, and tamper-proof environment for real estate listings and transactions.',
-  }
-  
+  },
+  {
+    slug: 'skfolio version of Portfolio allocation engine',
+    post: 'Skfolio: AI-Powered Stock Portfolio Allocation Engine',
+    website: 'https://lucifer7210-portfolio-skfolio.hf.space/',
+    type: 'TIAA RETIRE-AI-THON WINNER PROJECT updated version',
+    date: 'Nov 2025',
+    technologies: [
+      'Python',
+      'Streamlit',
+      'Skfolio',
+      'Plotly',
+      'NumPy',
+      'Pandas',
+      'Scikit-learn',
+      'Yahoo Finance',
+      'Hugging Face',
+    ],
+    detailedDescription: 'Advanced retirement portfolio optimizer leveraging skfolio\'s sophisticated ML algorithms for multi-objective portfolio optimization. Features 8+ optimization strategies (Mean-Risk, HRP, NCO, DRO CVaR, Stacking, Benchmark Tracking), efficient frontier visualization with interactive parameter tuning, walk-forward backtesting for out-of-sample validation, target-date/glide-path planning with automatic rebalancing, risk metrics (Sharpe, Sortino, Calmar ratios, CVaR), portfolio clustering analysis, and Monte Carlo simulations. Supports Indian NSE stocks with customizable constraints and risk tolerance-based allocation generation. Includes comprehensive retirement projection and goal achievement analysis.',
+    demoLink: 'https://lucifer7210-portfolio-skfolio.hf.space/'
+  },
+  {
+    slug: 'stocks-sentiment-analysis',
+    post: 'Real Time Stock Sentiment Analysis',
+    website: 'https://stockmarket-sentiment-analysis-zane.streamlit.app/',
+    type: 'Fintech Project',
+    date: 'Jan 2025',
+    technologies: [
+      'Python',
+      'Streamlit',
+      'Pandas',
+      'BeautifulSoup',
+      'Plotly',
+      'NLTK (VADER)',
+      'yfinance',
+      'LXML',
+    ],
+    detailedDescription: 'Built an interactive Streamlit application for real-time stock sentiment analysis. Fetches financial news from Finviz using BeautifulSoup, analyzes sentiment using NLTK\'s VADER analyzer on headlines and descriptions, visualizes trends with Plotly, and displays historical stock price data using yfinance. Features multi-stock selection, customizable update intervals, and detailed sentiment metrics with interactive charts.',
+  },
+  {
+    slug: 'technical-analysis-dashboard',
+    post: 'Real-Time Technical Analysis Dashboard',
+    website: 'https://technical-analysis-zane.streamlit.app/',
+    type: 'Fintech Project',
+    date: 'Jul 2025',
+    technologies: [
+      'Python',
+      'Streamlit',
+      'Plotly',
+      'Pandas',
+      'NumPy',
+      'yfinance',
+      'TA-Lib',
+    ],
+    detailedDescription: 'Interactive real-time stock technical analysis dashboard with advanced data processing capabilities. Supports multiple chart types (Candlestick, Line), multiple timeframes (1D, 1WK, 1MO, 1Y, Max), and technical indicators (SMA 20, EMA 20). Features robust data handling with MultiIndex column flattening, timezone-aware datetime processing, and error recovery. Displays comprehensive metrics (OHLCV), real-time prices for 45+ Indian NSE stocks, historical data tables, indicator analysis with comparative explanations. Uses Plotly for interactive visualizations and automated data validation to ensure data integrity.',
+  },
+
 ]
