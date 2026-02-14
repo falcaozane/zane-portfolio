@@ -233,7 +233,7 @@ export const projects: Project[] = [
     'Developed Dzillow, a decentralized real-estate marketplace built on the Core Chain blockchain. The platform utilizes Solidity for smart contract development and IPFS for decentralized storage of property metadata, ensuring a transparent, secure, and tamper-proof environment for real estate listings and transactions.',
   },
   {
-    slug: 'skfolio version of Portfolio allocation engine',
+    slug: 'skfolio-allocation-engine',
     post: 'Skfolio: AI-Powered Stock Portfolio Allocation Engine',
     website: 'https://lucifer7210-portfolio-skfolio.hf.space/',
     type: 'TIAA RETIRE-AI-THON WINNER PROJECT updated version',
