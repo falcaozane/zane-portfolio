@@ -210,6 +210,7 @@ export const projects: Project[] = [
     'ShadCN',
     'MetaMask',
     'Git',
+    'Hardhat',
   ],
   demoLink: 'https://www.linkedin.com/in/zane-falcao-014a41247/overlay/Project/1233871153/treasury/?profileId=ACoAAD0zMtABUGsox_1EgbtjnbpKhK1MYC9MGiQ',
   detailedDescription:
@@ -230,6 +231,7 @@ export const projects: Project[] = [
     'Tailwind CSS',
     'Blockchain',
     'Git',
+    'Hardhat',
   ],
   detailedDescription:
     'Developed Dzillow, a decentralized real-estate marketplace built on the Core Chain blockchain. The platform utilizes Solidity for smart contract development and IPFS for decentralized storage of property metadata, ensuring a transparent, secure, and tamper-proof environment for real estate listings and transactions.',
