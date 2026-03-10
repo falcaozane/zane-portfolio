@@ -35,6 +35,7 @@ export const projects: Project[] = [
     'Tailwind CSS',
     'ShadCN',
     'Streamlit',
+    'Docker',
   ],
     detailedDescription:
       'Fintel is an AI-powered financial intelligence mobile app designed to eliminate manual expense tracking by automatically reading UPI transaction SMS notifications in real-time. Utilizing a team of specialized agents, it classifies transactions, analyzes cashflow, and optimizes budgets while keeping data encrypted locally via SQLCipher. The platform extends into an investment engine for the Indian market, unifying portfolio analysis, mutual fund evaluation, and SEBI-aware risk management through an MCP-driven agentic tool selection layer. \n \n https://www.canva.com/design/DAG5_nGzA9E/xjAos89R6OImdoqZItYeEg/view',
@@ -177,6 +178,7 @@ export const projects: Project[] = [
     'Vector Databases',
     'Generative AI',
     'Git',
+    'Docker',
   ],
   detailedDescription:
     'Developed a Retrieval-Augmented Generation (RAG) application focused on the Bhagavad Gita, utilizing a comprehensive dataset encompassing all chapters in Sanskrit, English, and Hindi. The system enables semantic search and conversational interaction with ancient scriptures, providing contextually grounded responses.',
@@ -287,5 +289,23 @@ export const projects: Project[] = [
     ],
     detailedDescription: 'Interactive real-time stock technical analysis dashboard with advanced data processing capabilities. Supports multiple chart types (Candlestick, Line), multiple timeframes (1D, 1WK, 1MO, 1Y, Max), and technical indicators (SMA 20, EMA 20). Features robust data handling with MultiIndex column flattening, timezone-aware datetime processing, and error recovery. Displays comprehensive metrics (OHLCV), real-time prices for 45+ Indian NSE stocks, historical data tables, indicator analysis with comparative explanations. Uses Plotly for interactive visualizations and automated data validation to ensure data integrity.',
   },
-
+  {
+  "slug": "real-time-stock-kafka",
+  "post": "Real-Time Stock Market Data Streaming using Apache Kafka",
+  "website": "https://github.com/falcaozane/Data-streaming-using-kafka/blob/main/BDA%20Project%20PPT%20Final.pdf",
+  "type": "Data Engineering Project",
+  "date": "Aug 2024",
+  "technologies": [
+    "Apache Kafka",
+    "Apache Druid",
+    "Apache Superset",
+    "Python",
+    "Yahoo Finance API",
+    "Docker",
+    "Pandas",
+    "R Programming",
+    ],
+    "detailedDescription": "Engineered a real-time data pipeline to visualize Zomato (ZOMATO.NS) stock data. The architecture leverages Python for data ingestion, Apache Kafka for distributed messaging, Apache Druid for sub-second OLAP queries, and Apache Superset for live dashboarding and technical analysis.",
+    "demoLink": "https://github.com/blob/main/assets/images/stockanalysisdiagram.gif"
+  }
 ]
