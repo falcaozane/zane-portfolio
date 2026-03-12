@@ -309,5 +309,27 @@ export const projects: Project[] = [
     ],
     "detailedDescription": "Engineered a real-time data pipeline to visualize Zomato (ZOMATO.NS) stock data. The architecture leverages Python for data ingestion, Apache Kafka for distributed messaging, Apache Druid for sub-second OLAP queries, and Apache Superset for live dashboarding and technical analysis.",
     "demoLink": "https://github.com/blob/main/assets/images/stockanalysisdiagram.gif"
-  }
+  },
+  {
+  "slug": "algo-trading-h2h",
+  "post": "H2H: Algo Trading Dashboard & Next-Day Price Prediction",
+  "website": "https://lucifer7210-stocks-platform.hf.space/",
+  "type": "H2H AI/ML research intern assignment / Fintech Project",
+  "date": "2025-10-02",
+  "technologies": [
+    "Python",
+    "Streamlit",
+    "Plotly",
+    "Pandas",
+    "NumPy",
+    "Scikit-learn",
+    "yfinance",
+    "Matplotlib",
+    "pickle",
+    "curl_cffi",
+    "Google APIs (gspread, google-auth)"
+  ],
+  "detailedDescription": "An end-to-end algorithmic trading research/demo platform combining interactive Streamlit dashboards, rule-based trading strategies and a simple ML-based next-day price predictor. Key features:\n- Interactive Streamlit apps (streamlit_app.py and main_app.py) with tabs for Price Prediction and Trading Dashboard.\n- Prediction: loads a pre-trained logistic regression model and scaler from models/, builds a 50+ feature vector (technical, volatility, momentum, lag and volume features), scales it and predicts next-day up/down with a confidence gauge and model metrics shown in the sidebar.\n- Trading Dashboard: SMA/EMA rule-based strategies, configurable parameters (short/long periods, RSI period), risk-management options (transaction cost, stop-loss, take-profit), walk-forward/backtest UI and downloadable CSVs.\n- Indicators and features: computes RSI, SMA, EMA, MACD, Bollinger Bands and many engineered features (volatility windows, return lags, volume ratios, price position, etc.).\n- Visualizations: comprehensive Plotly charts — price with signals, equity curve vs buy-and-hold, RSI, MACD, Bollinger Bands, drawdown chart, trade timelines and distributions, and performance metrics (Final Value, Total Return, Win Rate, Sharpe, Max Drawdown, Volatility).\n- Backtesting: utilities for applying signals and backtesting (utils.backtester), producing per-trade details and summary metrics.\n- Indian market focus: predefined list of NSE tickers (.NS) supported throughout the UI.\n- Developer convenience: repository includes a PowerShell scaffolding script to create expected project structure (indicators/, models/, strategy/, utils/).\n- Usage: run CLI backtests with main.py or launch interactive UIs with `streamlit run streamlit_app.py` (prediction + dashboard) or `streamlit run main_app.py` (dashboard).\n\nNotes: the apps import modules from indicators/, strategy/ and utils/ and expect model files under models/ (e.g. logistic_regression_model.pkl and scaler.pkl).",
+  "demoLink": "https://lucifer7210-stocks-platform.hf.space/"
+}
 ]
