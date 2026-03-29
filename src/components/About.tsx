@@ -10,7 +10,7 @@ const About = () => {
   // 1. Logic for the changing badge
   const [index, setIndex] = useState(0);
   const badges = [
-    { label: 'AI', title: 'RAG Systems', icon: <IconBrain size={20} /> },
+    { label: 'AI', title: 'RAG Pipelines', icon: <IconBrain size={20} /> },
     { label: 'Web3', title: 'Smart Contracts', icon: <IconLock size={20} /> },
     { label: 'QA', title: 'Test Automation', icon: <IconCode size={20} /> },
     { label: 'Cloud', title: 'Azure/GCP', icon: <IconDatabase size={20} /> },
@@ -66,7 +66,7 @@ const About = () => {
             <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
               Computer Engineering graduate from <span className="font-bold text-slate-800">Fr. CRCE</span>. 
               Currently a Software Engineer at <span className="font-bold text-slate-800">Capgemini</span>. 
-              I build scalable solutions ranging from <span className="text-orange-600 font-medium">RAG-based AI Assistants</span> to <span className="text-orange-600 font-medium">Blockchain supply chain platforms</span>.
+              I build scalable solutions ranging from <span className="text-orange-600 font-medium">RAG Pipelines and Multi-Agent Systems</span> to <span className="text-orange-600 font-medium">Blockchain platforms</span>.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">

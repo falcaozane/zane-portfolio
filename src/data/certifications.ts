@@ -18,6 +18,31 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
+  slug: 'generative-ai-llms-deeplearningai',
+  company: 'DeepLearning.AI x AWS (Coursera)',
+  website: 'https://www.coursera.org/learn/generative-ai-with-llms',
+  post: 'Generative AI with Large Language Models (LLMs)',
+  type: 'Certification',
+  start: 'Feb 2026',
+  end: 'No expiry',
+  credentialId: 'JX2S1FG28U50',
+  letter: 'https://www.coursera.org/account/accomplishments/verify/JX2S1FG28U50',
+  image: 'https://coursera-university-assets.s3.amazonaws.com/b4/5cb90bb92f420b99bf323a0356f451/Icon.png',
+  technologies: [
+    'Generative AI',
+    'Large Language Models (LLMs)',
+    'Transformers',
+    'Prompt Engineering',
+    'Fine-tuning (PEFT, LoRA)',
+    'RLHF (Reinforcement Learning from Human Feedback)',
+    'Model Evaluation',
+    'LLM Deployment',
+    'AWS AI/ML Services'
+  ],
+    detailedDescription:
+    'Completed an intermediate-level certification by DeepLearning.AI in collaboration with AWS, focused on building practical understanding of Generative AI and Large Language Models (LLMs). Covered transformer architecture, prompt engineering, fine-tuning techniques (including LoRA and PEFT), reinforcement learning with human feedback (RLHF), and real-world LLM application deployment. Gained hands-on experience with model evaluation, scalability challenges, and production-ready AI workflows.'
+  },
+  {
     slug: 'microsoft-azure-ai-fundamentals-ai-900',
     company: 'Microsoft',
     website: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/',
@@ -139,4 +164,26 @@ export const certifications: Certification[] = [
     detailedDescription:
       'Introductory AWS Academy program covering core AWS services, security, architecture, pricing and support; verified via Credly badge.',
   },
+  {
+  slug: 'bcg-genai-virtual-experience',
+  company: 'Boston Consulting Group (BCG) via Forage',
+  website: 'https://www.theforage.com/simulations/bcg/gen-ai-anlo',
+  post: 'GenAI Virtual Experience Program',
+  type: 'Certification',
+  start: 'Apr 2024',
+  end: 'No expiry',
+  letter: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/BCG%20/gabev3vXhuACr48eb_BCG_ePPrsKuNMAQKaSEzk_1713542281562_completion_certificate.pdf',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/BCG_Corporate_Logo.svg',
+  credentialId: 'ePPrsKuNMAQKaSEzk',
+  technologies: [
+    'Generative AI',
+    'LLMs',
+    'AI Strategy',
+    'Business Problem Solving',
+    'Prompt Engineering',
+    'AI Use Cases',
+  ],
+  detailedDescription:
+    'Completed BCG’s GenAI Virtual Experience Program on Forage, gaining practical exposure to applying generative AI in business contexts. Worked on identifying high-impact AI use cases, leveraging large language models (LLMs), and developing strategic solutions for real-world business problems. Built foundational understanding of how GenAI can enhance productivity, decision-making, and innovation in organizations.',
+}
 ];
