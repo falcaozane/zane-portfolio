@@ -53,15 +53,39 @@ const ProjectDetail = ({ params }: ProjectDetailProps) => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
         
         {/* Left Column: The Narrative */}
-        <div className="lg:col-span-8">
+        <div className="lg:col-span-8 text-wrap">
           <section className="prose prose-slate max-w-none">
             <h3 className="text-xl font-bold text-slate-800 mb-6 flex items-center gap-2">
               About the Project
               <div className="h-[2px] flex-grow bg-orange-100 mt-1" />
             </h3>
-            <p className="text-lg text-slate-600 leading-relaxed whitespace-pre-line">
-              {project.detailedDescription}
-            </p>
+            <div className="text-base sm:text-lg text-slate-600 leading-relaxed whitespace-pre-line break-words space-y-4">
+              {project.detailedDescription.split('\n').map((line, index) => {
+                const urlRegex = /(https?:\/\/[^\s]+)/g;
+
+                const parts = line.split(urlRegex);
+
+                return (
+                  <p key={index}>
+                    {parts.map((part, i) =>
+                      urlRegex.test(part) ? (
+                        <a
+                          key={i}
+                          href={part}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-orange-500 underline break-all hover:text-orange-600"
+                        >
+                          View Presentation
+                        </a>
+                      ) : (
+                        part
+                      )
+                    )}
+                  </p>
+                );
+              })}
+            </div>
             
             {/* You could add more sections here like "Challenges" or "Key Features" later */}
           </section>
