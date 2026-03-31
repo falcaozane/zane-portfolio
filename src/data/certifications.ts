@@ -18,6 +18,32 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
+  slug: 'google-cloud-associate-cloud-engineer-ace',
+  company: 'Google Cloud',
+  website: 'https://cloud.google.com/learn/certification/cloud-engineer',
+  post: 'Google Cloud Certified: Associate Cloud Engineer',
+  type: 'Certification',
+  start: 'Mar 2026',
+  end: 'Mar 2029',
+  letter: 'https://www.credly.com/badges/6a143ccf-81d8-463b-ac79-23612e064369/public_url', // add your credential URL if available
+  image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/GCP-1.png',
+  credentialId: 'd55c6773d2ea41b790ed4780ae15fc25',
+  technologies: [
+    'Google Cloud Platform (GCP)',
+    'Compute Engine',
+    'Google Kubernetes Engine (GKE)',
+    'Cloud Storage',
+    'Identity and Access Management (IAM)',
+    'Networking',
+    'Pub/Sub',
+    'Cloud SQL',
+    'Infrastructure as Code (IaC)',
+    'Cloud Security'
+  ],
+  detailedDescription:
+    'Validates the ability to deploy applications, monitor operations, and manage enterprise solutions on Google Cloud. Covers core concepts such as compute, storage, networking, IAM, and infrastructure management using the Google Cloud Console and CLI. Focuses on real-world cloud operations including configuring environments, ensuring reliability, and maintaining scalable cloud solutions.'
+  },
+  {
   slug: 'generative-ai-llms-deeplearningai',
   company: 'DeepLearning.AI x AWS (Coursera)',
   website: 'https://www.coursera.org/learn/generative-ai-with-llms',
