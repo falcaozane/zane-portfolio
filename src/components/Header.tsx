@@ -4,30 +4,22 @@ import React from 'react';
 import Image from 'next/image';
 import { Link } from 'react-scroll';
 import {
-  IconBriefcase,
-  IconFileCertificate,
-  IconInfoCircle,
-  IconSchool,
-  IconTools,
-  IconUsersGroup,
-  IconCode,
-  IconTrophy,
+  IconPalette
 } from '@tabler/icons-react';
 import FZ from '../../public/fz.png';
 
-// Navigation items configuration
-const navItems = [
-  { name: 'About', to: 'about', icon: IconInfoCircle },
-  { name: 'Skills', to: 'skills', icon: IconTools },
-  { name: 'Experience', to: 'work-experience', icon: IconBriefcase },
-  { name: 'Projects', to: 'projects', icon: IconCode },
-  { name: 'Achievements', to: 'achievements', icon: IconTrophy },
-  { name: 'Position of Responsibility', to: 'por', icon: IconUsersGroup },
-  { name: 'Certifications', to: 'certifications', icon: IconFileCertificate },
-  { name: 'Education', to: 'education', icon: IconSchool },
-];
+import { navItems, themes } from '@/data/site';
+
+import { useEffect, useState } from "react";
 
 function Header() {
+
+  const [theme, setTheme] = useState("morning");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   // Close mobile drawer after clicking a link
   const closeDrawer = () => {
     const drawerToggle = document.getElementById('my-drawer-3') as HTMLInputElement;
@@ -72,10 +64,17 @@ function Header() {
                 </li>
               ))}
             </ul>
+
+            {/* 👇 Theme switcher */}
+            {/* {changeThemeButton(themes, setTheme)} */}
           </div>
+
+          
 
           {/* Mobile Menu Button */}
           <div className="flex-none lg:hidden">
+            {/* 👇 Theme switcher */}
+            {/* {changeThemeButton(themes, setTheme)} */}
             <label
               htmlFor="my-drawer-3"
               aria-label="open sidebar"
@@ -134,3 +133,23 @@ function Header() {
 }
 
 export default Header;
+
+
+function changeThemeButton(themes: string[], setTheme: (theme: string) => void) {
+  return (
+  <div className="dropdown dropdown-end">
+    <label tabIndex={0} className="btn text-amber-500 bg-white rounded-full p-3 border-0 hover:bg-amber-600 hover:text-white">
+      <IconPalette className='' size={20} />
+    </label>
+    <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-gray-50 rounded-box w-52 text-orange-500">
+      {themes.map((theme) => (
+        <li key={theme}>
+          <a className="cursor-pointer" onClick={() => setTheme(theme)}>
+            {theme}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)
+}

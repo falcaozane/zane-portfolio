@@ -11,12 +11,12 @@ const achievements = [
     detail: "Ministry of Law and Justice. Awarded ₹1,00,000 for AI-powered Legal Assistant.",
   },
   {
-    title: "A.I Retire-Thon 2024 Intercollege Winner",
-    detail: "TIAA Global Capabilities. Recognized for innovative stock allocation engine.",
+    title: "TIAA A.I Retire-Thon 2024 Intercollege Winner",
+    detail: "TIAA Global Capabilities. Recognized for innovative stock allocation engine across colleges from Mumbai and Pune Region.",
   },
   {
     title: "S.P.I.T Technovate 2.0 Winner",
-    detail: "First place in the technical innovation track.",
+    detail: "First place in the technical innovation track. Awarded ₹25,000 for the project.",
   },
   {
     title: "Rank 5 in IDE — Hyderabad",
@@ -24,11 +24,11 @@ const achievements = [
   },
   {
     title: "Strategem Hackathon Runner Up",
-    detail: "Second place in technical implementation and problem solving.",
+    detail: "Second place in technical implementation and problem solving. Awarded ₹3,000 for the project.",
   },
   {
     title: "Unfold 2k24 Hackathon Finalist — Bangalore",
-    detail: "Top finalist in the premier blockchain challenge organized by CoinDCX.",
+    detail: "Top finalist in the premier blockchain challenge organized by CoinDCX. Awarded $70 for the project.",
   },
 ];
 
@@ -63,8 +63,9 @@ const Achievements = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60" />
               
               {/* Corner Icon */}
-              <div className="absolute bottom-6 right-6 bg-orange-500 text-white p-3 rounded-xl shadow-xl">
+              <div className="absolute bottom-6 left-6 bg-orange-500 text-white p-3 rounded-xl shadow-xl flex items-center gap-1">
                 <IconAward size={28} />
+                <span className="text-sm hidden lg:block">Why wait? When you can innovate!</span>
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 
 export interface Social {
   href: string;
@@ -22,4 +22,10 @@ export const socials: Social[] = [
     icon: <Mail size={24} />,
     label: "Email",
   },
+  {
+    href: "https://www.instagram.com/falcaozane",
+    icon: <Instagram size={24} />,
+    label: "Instagram",
+  }
+
 ];
