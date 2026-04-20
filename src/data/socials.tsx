@@ -21,7 +21,7 @@ export const socials: Social[] = [
     label: "LinkedIn",
   },
   {
-    href: "mailto:falcaozane@example.com",
+    href: "mailto:falcaozane@gmail.com",
     icon: <Mail size={24} />,
     label: "Email",
   },
