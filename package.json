@@ -10,6 +10,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
+    "@lobehub/icons": "^5.4.0",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
@@ -20,7 +21,6 @@
     "next": "15.4.8",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-parallax-tilt": "^1.7.322",
     "react-scroll": "^1.9.3",
     "react-type-animation": "^3.2.0"
   },

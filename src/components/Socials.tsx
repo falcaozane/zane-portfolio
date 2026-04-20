@@ -48,7 +48,7 @@ const Socials = () => {
       }`}
     >
       {socials
-        .filter((social) => social.label !== "Instagram")
+        .filter((social) => social.label !== "Instagram" && social.label !== "Hugging Face")
         .map((social, index) => (
           <li
             key={social.label}

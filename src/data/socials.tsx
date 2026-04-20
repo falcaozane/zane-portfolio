@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Instagram } from "lucide-react";
+import { HuggingFace } from '@lobehub/icons';
 
 export interface Social {
   href: string;
@@ -26,6 +27,11 @@ export const socials: Social[] = [
     href: "https://www.instagram.com/falcaozane",
     icon: <Instagram size={24} />,
     label: "Instagram",
+  },
+  {
+    href: "https://huggingface.co/lucifer7210",
+    icon: <HuggingFace size={24} />,
+    label: "Hugging Face",
   }
 
 ];
