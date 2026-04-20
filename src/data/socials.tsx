@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 import { HuggingFace } from '@lobehub/icons';
+import { FaSpotify } from "react-icons/fa";
 
 export interface Social {
   href: string;
@@ -32,6 +33,10 @@ export const socials: Social[] = [
     href: "https://huggingface.co/lucifer7210",
     icon: <HuggingFace size={24} />,
     label: "Hugging Face",
+  },
+  {
+    href: "https://open.spotify.com/user/31i7p26p2u5jgrhog6257jsquc24",
+    icon: <FaSpotify size={24} />,
+    label: "Spotify",
   }
-
 ];
