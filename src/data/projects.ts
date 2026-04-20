@@ -14,7 +14,7 @@ export type Project = {
 export const projects: Project[] = [
   {
   "slug": "fintel-ai",
-  "post": "Fintel A.I: Agentic Financial Intelligence for Indian Markets",
+  "post": "Fintel A.I : Agentic Financial Intelligence for Indian Markets",
   "website": "https://fintel-agents.vercel.app/",
   "demoLink": "https://www.youtube.com/watch?v=7hOBj5KySk4&feature=youtu.be",
   "type": "Mumbai Hacks Hackathon Project",
@@ -45,7 +45,7 @@ export const projects: Project[] = [
 },
   {
     slug: 'doccrypt',
-    post: 'DocCrypt : AI-powered Secure Document Management Platform',
+    post: 'DocCrypt : A.I-powered Secure Document Management Platform',
     website: 'https://doc-crypt-aptos.vercel.app/',
     type: 'Unfold 2k24 Blockchain Hackathon', // Inferred from context
     date: 'Dec 2024',
@@ -68,7 +68,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'legal-document-assistant',
-    post: 'A.I powered Legal Document Assistant',
+    post: 'LegalConnect : A.I-powered Legal Document Assistant',
     type: 'Smart India Hackathon 23 (Group of 6)',
     date: 'Dec 2023',
     technologies: [
@@ -93,7 +93,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'stock-allocation-engine',
-    post: 'A.I based Stock Allocation Engine',
+    post: 'ArthVed : A.I based Stock Allocation Engine',
     website: 'https://nse-stocks-portfolio-allocation.streamlit.app/',
     type: 'TIAA RETIRE-AI-THON WINNER PROJECT', // Inferred from context
     date: 'May 2024',

@@ -3,11 +3,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { IconAward, IconChevronRight } from '@tabler/icons-react';
-import Wins from '../../public/Wins.jpeg'; // Assuming the image is in your public folder
-
+import Wins from '../../public/Wins.jpeg';
 const achievements = [
   {
-    title: "Winner, Smart India Hackathon 2023",
+    title: "Winner, Smart India Hackathon 2023 — Kolkata",
     detail: "Ministry of Law and Justice. Awarded ₹1,00,000 for AI-powered Legal Assistant.",
   },
   {
@@ -19,7 +18,7 @@ const achievements = [
     detail: "First place in the technical innovation track. Awarded ₹25,000 for the project.",
   },
   {
-    title: "Rank 5 in IDE — Hyderabad",
+    title: "Rank 5 in IDE Competition — Hyderabad",
     detail: "Innovation, Design and Entrepreneurship competition organized by AICTE and Wadhwani Foundation.",
   },
   {

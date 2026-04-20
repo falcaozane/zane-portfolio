@@ -7,9 +7,9 @@ export const experiences = [
     start: "September 2025",
     end: "Present",
     skills: [
-      "Automation Testing", "Java", "Selenium", "Playwright", "JIRA", "Excel", "STLC", "Postman", "Azure"
+      "Automation Testing", "Java", "Selenium", "Playwright", "JIRA", "Qtest", "Confluence", "Excel", "STLC", "Postman", "Azure"
     ],
-    description: "Performed Automation & Functional Testing on client applications focusing on Bug Reporting & Integration.",
+    description: "Client: Abbvie Inc. (Pharmaceutical Company).\n Performed Automation & Functional Testing on client's internal tools and applications focusing on Bug Reporting & Integration.",
     location: "Mumbai, India (Hybrid)",
   },
   {
@@ -21,9 +21,9 @@ export const experiences = [
     end: "July 2025",
     letter: "",
     skills: [
-      "Manual Testing", "JIRA", "Excel", "STLC", "CLI", "Bug Reporting", "SSO", "Database Connectors", "Information Security"
+      "Functional Testing", "JIRA", "Excel", "STLC", "CLI", "Bug Reporting", "SSO", "Database Connectors", "Information Security"
     ],
-    description: "Performed Manual & Functional Testing on Converged Identity, focusing on Bug Reporting & Integration.",
+    description: "Performed Functional Testing on Converged Identity, focusing on Bug Reporting & Integration.",
     location: "Andheri, Mumbai, India",
   },
   {
