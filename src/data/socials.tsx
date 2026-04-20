@@ -1,6 +1,7 @@
-import { Github, Linkedin, Mail, Instagram } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram, TwitterIcon } from "lucide-react";
 import { HuggingFace } from '@lobehub/icons';
 import { AiOutlineSpotify } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
 
 export interface Social {
   href: string;
@@ -38,5 +39,11 @@ export const socials: Social[] = [
     href: "https://open.spotify.com/user/31i7p26p2u5jgrhog6257jsquc24",
     icon: <AiOutlineSpotify size={24} />,
     label: "Spotify",
-  }
+  },
+  {
+    href: "https://x.com/falcao_zane",
+    icon: <FaXTwitter size={24} />,
+    label: "X (I prefer calling it Twitter, elon musk)",
+  },
+
 ];
