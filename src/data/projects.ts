@@ -86,7 +86,7 @@ export const projects: Project[] = [
       'Beautiful Soup',
     ],
     detailedDescription:
-      'Developed a multi-functional legal AI assistant for document creation, simplification & IPC chatbot.',
+      "LegalConnect is a comprehensive AI-powered platform designed to democratize access to justice for individuals and startups in India. Built on a Retrieval Augmented Generation (RAG) architecture using LangChain and Pinecone, the system provides automated drafting of customizable legal documents and simplifies complex contracts into plain language. \n\nThe platform features an IPC/Constitution chatbot trained on specific Indian legal frameworks (IPC, CPC, CrPC, and the Constitution) to provide context-aware legal literacy. To bridge the gap between AI and human expertise, the application includes a secure one-click portal for expert connectivity with a strict no-record privacy policy for confidential consultations. The project was awarded the winner's trophy at the Smart India Hackathon 2023 for its potential to optimize legal workflows for law firms and improve access for the general public.",
     // No website or demo link provided in the resume for this one
     demoLink:
       'https://drive.google.com/file/d/1joRqaG6UpNXENyAP-gnrHsGi2XPlJIpC/view',

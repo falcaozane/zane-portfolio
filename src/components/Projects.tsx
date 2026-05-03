@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { projects } from '@/data/projects'
-import { IconPlayerPlay, IconWorldShare, IconCode } from '@tabler/icons-react'
+import { IconPlayerPlay, IconWorldShare, IconCode,  } from '@tabler/icons-react'
 import Link from 'next/link'
 
 const Projects = () => {

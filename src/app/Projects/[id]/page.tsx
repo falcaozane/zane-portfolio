@@ -59,7 +59,7 @@ const ProjectDetail = ({ params }: ProjectDetailProps) => {
               About the Project
               <div className="h-[2px] flex-grow bg-orange-100 mt-1" />
             </h3>
-            <div className="text-base sm:text-lg text-slate-600 leading-relaxed whitespace-pre-line break-words space-y-4">
+            <div className="text-base sm:text-lg text-slate-600 leading-relaxed whitespace-pre-line break-words space-y-4 text-justify">
               {project.detailedDescription.split('\n').map((line, index) => {
                 const urlRegex = /(https?:\/\/[^\s]+)/g;
 
