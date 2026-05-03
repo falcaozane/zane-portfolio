@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { projects } from '@/data/projects'
-import { IconPlayerPlay, IconWorldShare, IconCode,  } from '@tabler/icons-react'
+import { IconPlayerPlay, IconWorldShare, IconCode, IconBrandGithubCopilot } from '@tabler/icons-react'
 import Link from 'next/link'
 
 const Projects = () => {
@@ -104,7 +104,7 @@ const Projects = () => {
             href="/Projects"
             className="rounded-xl w-full mt-10 btn bg-orange-500 border-orange-600 text-white hover:bg-amber-500 hover:border-amber-500 shadow-lg shadow-orange-100"
           >
-            View All Projects
+            <IconBrandGithubCopilot size={18} className="mr-2" /> View All Projects
           </Link>
         </div>
       </div>
