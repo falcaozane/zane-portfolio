@@ -19,7 +19,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="text-xl text-orange-500 font-bold pt-3">Zane <span className="text-black">Vijay</span> Falcao</div>
+        <div className="text-xl text-orange-500 font-bold pt-3"><span className="text-black">Zane</span> Falcao</div>
 
         <div className="text-amber-500 font-semibold">&copy; {new Date().getFullYear()} All Rights Reserved</div>
       </div>
