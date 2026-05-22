@@ -14,7 +14,7 @@ const achievements = [
     detail: "TIAA Global Capabilities. Recognized for innovative stock allocation engine across colleges from Mumbai and Pune Region.",
   },
   {
-    title: "S.P.I.T Technovate 2.0 Winner",
+    title: "S.P.I.T Technovate 2.0 Winner 2024 — Mumbai",
     detail: "First place in the technical innovation track. Awarded ₹25,000 for the project.",
   },
   {
@@ -29,6 +29,10 @@ const achievements = [
     title: "Unfold 2k24 Hackathon Finalist — Bangalore",
     detail: "Top finalist in the premier blockchain challenge organized by CoinDCX. Awarded $70 for the project.",
   },
+  {
+    title: "WESYNERGIZE Champion of the Month ( April 2026 ) - Capgemini India",
+    detail: "Awarded for most number of contributions in internal projects and initiatives.",
+  }
 ];
 
 const Achievements = () => {

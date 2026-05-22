@@ -7,9 +7,9 @@ export const experiences = [
     start: "September 2025",
     end: "Present",
     skills: [
-      "Automation Testing", "Java", "Selenium", "Playwright", "JIRA", "Qtest", "Confluence", "Excel", "STLC", "Postman", "Azure"
+      "Automation Testing", "Java", "Selenium", "Playwright", "JIRA", "Qtest", "Confluence", "Excel", "STLC", "Postman", "Azure","Gen A.I."
     ],
-    description: "Client: Abbvie Inc. (Pharmaceutical Company).\n Performed Automation & Functional Testing on client's internal tools and applications focusing on Bug Reporting & Integration.",
+    description: "Client: Abbvie Inc. (Pharmaceutical Company).\n Performed functional testing, User Acceptance Testing (UAT), and quality validation on Salesforce-based compliance tools, automated test-generation utilities, and internal AI/ML document parsing applications.",
     location: "Mumbai, India (Hybrid)",
   },
   {
