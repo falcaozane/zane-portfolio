@@ -30,7 +30,7 @@ const achievements = [
     detail: "Top finalist in the premier blockchain challenge organized by CoinDCX. Awarded $70 for the project.",
   },
   {
-    title: "WESYNERGIZE Champion of the Month ( April 2026 ) - Capgemini India",
+    title: "WESYNERGIZE Champion of the Month ( April 2026 ) — Capgemini India",
     detail: "Awarded for most number of contributions in internal projects and initiatives.",
   }
 ];
