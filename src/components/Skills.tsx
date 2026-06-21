@@ -106,13 +106,13 @@ const skillCategories: SkillCategory[] = [
 
 const SkillsCarousel: React.FC = () => {
   return (
-    <section id="skills" className="w-full pt-24 pb-16 bg-gray-100">
+    <section id="skills" className="w-full pt-24 pb-16 bg-sys-background">
       {/* Header - Constrained width */}
       <div className="w-full max-w-7xl mx-auto mb-12 px-4 md:px-0">
-        <h3 className="text-2xl lg:text-4xl font-extrabold text-orange-500 relative pb-2 inline-block">
+        <h3 className="text-2xl lg:text-4xl font-extrabold text-sys-primary relative pb-2 inline-block">
           <span className="relative inline-block pb-1">
             SKILLS
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-sys-primary to-sys-secondary rounded-full"></span>
           </span>
         </h3>
       </div>
@@ -142,9 +142,9 @@ const SkillsCarousel: React.FC = () => {
           {skillCategories.map((category) => (
             <SplideSlide key={category.id} className="h-[320px] w-72">
               {/* Card */}
-              <div className="w-full h-full bg-white rounded-xl p-6 border-2 border-orange-400 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <div className="w-full h-full bg-sys-card rounded-xl p-6 border-2 border-sys-primary shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 {/* Category Title */}
-                <h4 className="text-xl font-bold text-orange-500 mb-5">
+                <h4 className="text-xl font-bold text-sys-primary mb-5">
                   {category.name}
                 </h4>
 
@@ -153,7 +153,7 @@ const SkillsCarousel: React.FC = () => {
                   {category.skills.map((skill, index) => (
                     <div
                       key={index}
-                      className="overflow-hidden rounded-full border border-amber-400 hover:border-orange-600 transition-colors duration-200"
+                      className="overflow-hidden rounded-full border border-sys-secondary hover:border-sys-primary transition-colors duration-200"
                     >
                       <img
                         src={skill.icon}
@@ -173,11 +173,11 @@ const SkillsCarousel: React.FC = () => {
 
         {/* Custom Arrows */}
         <div className="splide__arrows">
-          <button className="splide__arrow splide__arrow--prev !bg-orange-500 !opacity-100 hover:!bg-orange-600">
-            <ChevronRight className="w-5 h-5 text-white" />
+          <button className="splide__arrow splide__arrow--prev !bg-sys-primary !opacity-100 hover:!opacity-90">
+            <ChevronRight className="w-5 h-5 text-sys-primary-foreground" />
           </button>
-          <button className="splide__arrow splide__arrow--next !bg-orange-500 !opacity-100 hover:!bg-orange-600">
-            <ChevronRight className="w-5 h-5 text-white" />
+          <button className="splide__arrow splide__arrow--next !bg-sys-primary !opacity-100 hover:!opacity-90">
+            <ChevronRight className="w-5 h-5 text-sys-primary-foreground" />
           </button>
         </div>
       </Splide>

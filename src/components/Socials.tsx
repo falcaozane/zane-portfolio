@@ -43,7 +43,7 @@ const Socials = () => {
 
   return (
     <ul
-      className={`border border-orange-500 fixed backdrop-blur-xs bg-white/10 right-0 z-50 -translate-y-1/2 shadow-xl top-3/4 menu rounded-l-box px-2 gap-2 transition-opacity duration-300 ${
+      className={`border border-sys-primary fixed backdrop-blur-xs bg-sys-background/50 right-0 z-50 -translate-y-1/2 shadow-xl top-3/4 menu rounded-l-box px-2 gap-2 transition-opacity duration-300 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -55,7 +55,7 @@ const Socials = () => {
             style={{
               transitionDelay: `${index * 80}ms`,
             }}
-            className={`text-amber-600 bg-white hover:bg-orange-500 hover:text-white rounded-full py-2
+            className={`text-sys-primary bg-sys-card hover:bg-sys-primary hover:text-sys-primary-foreground rounded-full py-2
             transform transition-all duration-300 ease-in-out
             ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-6"}
             `}

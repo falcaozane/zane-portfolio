@@ -3,3 +3,29 @@
 
 @import '@splidejs/react-splide/css';
 
+@theme {
+  --color-sys-background: hsl(var(--background));
+  --color-sys-foreground: hsl(var(--foreground));
+  --color-sys-card: hsl(var(--card));
+  --color-sys-card-foreground: hsl(var(--cardForeground));
+  --color-sys-popover: hsl(var(--popover));
+  --color-sys-popover-foreground: hsl(var(--popoverForeground));
+  --color-sys-primary: hsl(var(--primary));
+  --color-sys-primary-foreground: hsl(var(--primaryForeground));
+  --color-sys-secondary: hsl(var(--secondary));
+  --color-sys-secondary-foreground: hsl(var(--secondaryForeground));
+  --color-sys-muted: hsl(var(--muted));
+  --color-sys-muted-foreground: hsl(var(--mutedForeground));
+  --color-sys-accent: hsl(var(--accent));
+  --color-sys-accent-foreground: hsl(var(--accentForeground));
+  --color-sys-destructive: hsl(var(--destructive));
+  --color-sys-destructive-foreground: hsl(var(--destructiveForeground));
+  --color-sys-border: hsl(var(--border));
+  --color-sys-input: hsl(var(--input));
+  --color-sys-ring: hsl(var(--ring));
+  --radius: var(--radius);
+}
+
+body {
+  @apply bg-sys-background text-sys-foreground;
+}

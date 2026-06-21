@@ -2,13 +2,13 @@ import { socials } from "@/data/socials";
 
 export default function Footer() {
   return (
-    <footer className="p-10 footer text-base-content bg-white">
+    <footer className="p-10 footer text-base-content bg-sys-background">
       <div className="flex flex-col items-center w-full">
         <div className="flex">
           {socials.map((social) => (
             <a
               key={social.href}
-              className="flex items-center gap-1 px-3 text-amber-500 hover:text-orange-500"
+              className="flex items-center gap-1 px-3 text-sys-secondary hover:text-sys-primary"
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
@@ -19,9 +19,9 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="text-xl text-orange-500 font-bold pt-3"><span className="text-black">Zane</span> Falcao</div>
+        <div className="text-xl text-sys-primary font-bold pt-3"><span className="text-sys-foreground">Zane</span> Falcao</div>
 
-        <div className="text-amber-500 font-semibold">&copy; {new Date().getFullYear()} All Rights Reserved</div>
+        <div className="text-sys-secondary font-semibold">&copy; {new Date().getFullYear()} All Rights Reserved</div>
       </div>
     </footer>
   );
