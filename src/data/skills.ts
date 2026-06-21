@@ -70,10 +70,15 @@ export const skill_badges: SkillBadgeType = {
   openai: "https://img.shields.io/badge/OpenAI-FFFFFF?style=for-the-badge&logo=openai&logoColor=black",
   jupyter: "https://img.shields.io/badge/Jupyter-FFFFFF?style=for-the-badge&logo=jupyter&logoColor=black",
   opencv: "https://img.shields.io/badge/OpenCV-FFFFFF?style=for-the-badge&logo=opencv&logoColor=black",
+  langchain: "https://img.shields.io/badge/LangChain-fff?style=for-the-badge&logo=langchain&logoColor=black",
+  langgraph: "https://img.shields.io/badge/LangChain-fff?style=for-the-badge&logo=langchain&logoColor=black",
+  gradio: "https://img.shields.io/badge/Gradio-fff?style=for-the-badge&logo=gradio&logoColor=black",
+  crewai: "https://img.shields.io/badge/CrewAI-fff?style=for-the-badge&logo=crewai&logoColor=black",
   
 };
 
 export const skill_badges_mono: SkillBadgeType = {
   java: "https://img.shields.io/badge/Java-fff?style=for-the-badge&logo=openjdk&logoColor=black",
   langchain: "https://img.shields.io/badge/LangChain-fff?style=for-the-badge&logo=langchain&logoColor=black",
+  langgraph: "https://img.shields.io/badge/LangGraph-fff?style=for-the-badge&logo=langgraph&logoColor=black",
 };
