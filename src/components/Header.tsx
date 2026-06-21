@@ -7,8 +7,21 @@ import { Link } from 'react-scroll';
 import FZ from '../../public/fz.png';
 import { navItems, themes } from '@/data/site';
 import ThemeModeToggle from '@/components/theme-mode-toggle';
+import { useThemeContext } from "@/context/theme-data-provider";
 
 function Header() {
+  const { theme } = useThemeContext();
+
+  // Map themes to their logo files
+  const getLogo = () => {
+    switch (theme) {
+      case "Morning Bliss": return "/morning-bliss-logo.png";
+      case "Afternoon Glow": return "/afternoon-glow-logo.png";
+      case "Evening Twilight": return "/evening-twilight-logo.png";
+      case "Night Serenity": return "/night-serenity-logo.png";
+      default: return FZ;
+    }
+  };
 
   // Close mobile drawer after clicking a link
   const closeDrawer = () => {
@@ -29,22 +42,22 @@ function Header() {
           {/* Logo */}
           <div className="mx-2 flex-1 md:px-2">
             <Link to="about" smooth duration={500} className="cursor-pointer">
-              <Image src={FZ} alt="Logo" className="h-10 w-12" />
+              <Image src={getLogo()} alt="Logo" width={48} height={40} className="h-10 w-12 object-contain" />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden flex-none lg:flex items-center gap-4">
-            <ul className="menu menu-horizontal text-orange-400 font-medium">
+            <ul className="menu menu-horizontal text-sys-primary font-medium">
               {navItems.map((item) => (
-                <li key={item.to} className="hover:bg-slate-50 rounded-md">
+                <li key={item.to} className="hover:bg-sys-muted/50 rounded-md">
                   <Link
                     to={item.to}
                     spy
                     smooth
                     offset={-80}
                     duration={500}
-                    activeClass="text-orange-600 bg-orange-50"
+                    activeClass="text-sys-primary bg-sys-primary/10"
                     className="cursor-pointer transition-colors"
                   >
                     {item.name}
@@ -73,7 +86,7 @@ function Header() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                className="h-6 w-6 stroke-current bg-amber-600 rounded-sm text-white"
+                className="h-6 w-6 stroke-current bg-sys-primary rounded-sm text-sys-primary-foreground"
               >
                 <path
                   strokeLinecap="round"
@@ -91,7 +104,7 @@ function Header() {
       <div className="drawer-side z-50">
         <label htmlFor="my-drawer-3" className="drawer-overlay" />
 
-        <ul className="menu bg-white font-medium min-h-full w-80 text-orange-400 pt-4">
+        <ul className="menu bg-sys-background font-medium min-h-full w-80 text-sys-foreground pt-4">
           {navItems.map((item) => {
             const Icon = item.icon;
 
@@ -103,11 +116,11 @@ function Header() {
                   smooth
                   offset={-80}
                   duration={500}
-                  activeClass="text-orange-600 bg-orange-50"
+                  activeClass="text-sys-primary bg-sys-primary/10"
                   className="cursor-pointer flex items-center"
                   onClick={closeDrawer}
                 >
-                  <Icon className="mr-2 text-orange-400" size={20} />
+                  <Icon className="mr-2 text-sys-primary" size={20} />
                   {item.name}
                 </Link>
               </li>

@@ -18,15 +18,18 @@ export default function ThemeModeToggle() {
     <div className="dropdown dropdown-end">
       <label
         tabIndex={0}
-        className="btn text-amber-500 bg-white rounded-full p-3 border-0 hover:bg-amber-600 hover:text-white"
+        className="btn text-sys-primary bg-sys-card rounded-full p-3 border-0 hover:bg-sys-primary hover:text-sys-primary-foreground shadow-md transition-colors"
       >
         <IconPalette size={20} />
       </label>
 
-      <ul className="dropdown-content menu p-2 shadow bg-gray-50 rounded-box w-52 text-orange-500">
+      <ul className="dropdown-content menu p-2 shadow-xl border border-sys-border bg-sys-popover rounded-box w-52 text-sys-primary z-[100] mt-2">
         {themes.map((t) => (
           <li key={t}>
-            <button onClick={() => setTheme(t as any)}>
+            <button 
+              className="hover:bg-sys-primary hover:text-sys-primary-foreground transition-colors rounded-lg"
+              onClick={() => setTheme(t as any)}
+            >
               {t}
             </button>
           </li>

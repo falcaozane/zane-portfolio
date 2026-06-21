@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       {/* <Header /> */}
-      <div className="sticky top-0 z-50 backdrop-blur-sm bg-white/70 shadow-sm">
+      <div className="sticky top-0 z-50 backdrop-blur-sm bg-sys-background/70 shadow-sm border-b border-sys-border/40">
         <Header />
       </div>
       <Socials />

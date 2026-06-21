@@ -34,14 +34,14 @@ const achievements = [
 
 const Achievements = () => {
   return (
-    <section id="achievements" className="py-20 bg-gray-100 px-6 sm:px-10">
+    <section id="achievements" className="py-20 bg-sys-background px-6 sm:px-10">
       <div className="max-w-7xl mx-auto">
         
         {/* Heading Section */}
-        <h3 className="text-2xl lg:text-4xl font-extrabold text-orange-500 mb-12 relative pb-2 inline-block">
+        <h3 className="text-2xl lg:text-4xl font-extrabold text-sys-primary mb-12 relative pb-2 inline-block">
             <span className="relative inline-block pb-1">
                 ACHIEVEMENTS
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-sys-primary to-sys-secondary rounded-full"></span>
           </span>
         </h3>
 
@@ -50,7 +50,7 @@ const Achievements = () => {
           {/* Left Side: Image Content */}
           <div className="relative group">
             {/* Background Decorative Element */}
-            <div className="absolute -inset-4 bg-orange-100/50 rounded-3xl -rotate-2 group-hover:rotate-0 transition-transform duration-500" />
+            <div className="absolute -inset-4 bg-sys-primary/20 rounded-3xl -rotate-2 group-hover:rotate-0 transition-transform duration-500" />
             
             <div className="relative aspect-[4/5] sm:aspect-square overflow-hidden rounded-2xl shadow-2xl">
               <Image
@@ -63,7 +63,7 @@ const Achievements = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60" />
               
               {/* Corner Icon */}
-              <div className="absolute bottom-6 left-6 bg-orange-500 text-white p-3 rounded-xl shadow-xl flex items-center gap-1">
+              <div className="absolute bottom-6 left-6 bg-sys-primary text-sys-primary-foreground p-3 rounded-xl shadow-xl flex items-center gap-1">
                 <IconAward size={28} />
                 <span className="text-sm hidden lg:block">Why wait? When you can innovate!</span>
               </div>
@@ -76,15 +76,15 @@ const Achievements = () => {
               {achievements.map((achievement, index) => (
                 <li key={index} className="flex gap-4 group">
                   <div className="mt-1.5 shrink-0">
-                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center group-hover:bg-orange-500 transition-colors duration-300">
-                      <IconChevronRight size={14} className="text-orange-600 group-hover:text-white" />
+                    <div className="w-6 h-6 rounded-full bg-sys-primary/10 flex items-center justify-center group-hover:bg-sys-primary transition-colors duration-300">
+                      <IconChevronRight size={14} className="text-sys-primary group-hover:text-sys-primary-foreground" />
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-slate-900 group-hover:text-orange-600 transition-colors duration-300">
+                    <h4 className="text-xl font-bold text-sys-foreground group-hover:text-sys-primary transition-colors duration-300">
                       {achievement.title}
                     </h4>
-                    <p className="text-slate-500 text-sm leading-relaxed mt-1">
+                    <p className="text-sys-muted-foreground text-sm leading-relaxed mt-1">
                       {achievement.detail}
                     </p>
                   </div>
@@ -93,8 +93,8 @@ const Achievements = () => {
             </ul>
 
             {/* Bottom Callout */}
-            <div className="p-6 bg-[#fafafa] border-l-4 border-orange-500 rounded-r-xl">
-              <p className="text-slate-600 font-medium italic">
+            <div className="p-6 bg-sys-card border-l-4 border-sys-primary rounded-r-xl">
+              <p className="text-sys-muted-foreground font-medium italic">
                 &ldquo;Consistently delivering winning solutions under pressure in fast-paced competitive environments.&rdquo;
               </p>
             </div>
