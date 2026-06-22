@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Link } from 'react-scroll';
 
 import FZ from '../../public/fz.png';
+import FZNoon from '../../public/about/fz_afternoon.png'
 import { navItems, themes } from '@/data/site';
 import ThemeModeToggle from '@/components/theme-mode-toggle';
 import { useThemeContext } from "@/context/theme-data-provider";
@@ -16,7 +17,7 @@ function Header() {
   const getLogo = () => {
     switch (theme) {
       case "Morning Bliss": return "/morning-bliss-logo.png";
-      case "Afternoon Glow": return "/afternoon-glow-logo.png";
+      case "Afternoon Glow": return FZNoon;
       case "Evening Twilight": return "/evening-twilight-logo.png";
       case "Night Serenity": return "/night-serenity-logo.png";
       default: return FZ;
