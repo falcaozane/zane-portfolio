@@ -5,6 +5,7 @@ import { IconFileCv, IconArrowRight, IconCode, IconBrain, IconDatabase, IconLock
 import { TypeAnimation } from 'react-type-animation';
 import Zane from '../../public/Zane.jpg';
 import AfternoonGlow from '../../public/about/afternoon-glow-photo.jpg';
+import MorningBliss from '../../public/about/morning-bliss-photo.jpg';
 import Link from 'next/link';
 import { useThemeContext } from "@/context/theme-data-provider";
 
@@ -14,7 +15,7 @@ const About = () => {
   // Map themes to their photo files
   const getPhoto = () => {
     switch (theme) {
-      case "Morning Bliss": return "/morning-bliss-photo.jpg";
+      case "Morning Bliss": return MorningBliss;
       case "Afternoon Glow": return AfternoonGlow;
       case "Evening Twilight": return "/evening-twilight-photo.jpg";
       case "Night Serenity": return "/night-serenity-photo.jpg";
