@@ -6,6 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 import Zane from '../../public/Zane.jpg';
 import AfternoonGlow from '../../public/about/afternoon-glow-photo.jpg';
 import MorningBliss from '../../public/about/morning-bliss-photo.jpg';
+import EveningTwilight from '../../public/about/evening-twilight.jpeg';
 import Link from 'next/link';
 import { useThemeContext } from "@/context/theme-data-provider";
 
@@ -17,7 +18,7 @@ const About = () => {
     switch (theme) {
       case "Morning Bliss": return MorningBliss;
       case "Afternoon Glow": return AfternoonGlow;
-      case "Evening Twilight": return "/evening-twilight-photo.jpg";
+      case "Evening Twilight": return EveningTwilight;
       case "Night Serenity": return "/night-serenity-photo.jpg";
       default: return Zane;
     }
