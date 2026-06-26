@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { IconFileCv, IconArrowRight, IconCode, IconBrain, IconDatabase, IconLock } from '@tabler/icons-react';
 import { TypeAnimation } from 'react-type-animation';
 import Zane from '../../public/Zane.jpg';
+import NightSerenity from '../../public/about/night-serenity-photo.png'
 import AfternoonGlow from '../../public/about/afternoon-glow-photo.jpg';
 import MorningBliss from '../../public/about/morning-bliss-photo.jpg';
 import EveningTwilight from '../../public/about/evening-twilight.jpeg';
@@ -19,7 +20,7 @@ const About = () => {
       case "Morning Bliss": return MorningBliss;
       case "Afternoon Glow": return AfternoonGlow;
       case "Evening Twilight": return EveningTwilight;
-      case "Night Serenity": return "/night-serenity-photo.jpg";
+      case "Night Serenity": return NightSerenity;
       default: return Zane;
     }
   };
