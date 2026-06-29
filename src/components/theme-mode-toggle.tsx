@@ -3,9 +3,10 @@
 import React from "react";
 import { IconPalette } from "@tabler/icons-react";
 import { useThemeContext } from "@/context/theme-data-provider";
+import { ThemeColors } from "@/types/theme-types";
 
 export default function ThemeModeToggle() {
-  const { theme, setTheme } = useThemeContext();
+  const { setTheme } = useThemeContext();
 
   const themes = [
     "Morning Bliss",
@@ -28,7 +29,7 @@ export default function ThemeModeToggle() {
           <li key={t}>
             <button 
               className="hover:bg-sys-primary hover:text-sys-primary-foreground transition-colors rounded-lg"
-              onClick={() => setTheme(t as any)}
+              onClick={() => setTheme(t as ThemeColors)}
             >
               {t}
             </button>

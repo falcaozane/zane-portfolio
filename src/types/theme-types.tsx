@@ -1,7 +1,8 @@
-type ThemeColors = "Morning Bliss" | "Afternoon Glow" | "Evening Twilight" | "Night Serenity";
+import React from "react";
 
-interface ThemeColorStateParams {
+export type ThemeColors = "Morning Bliss" | "Afternoon Glow" | "Evening Twilight" | "Night Serenity";
+
+export interface ThemeColorStateParams {
     theme: ThemeColors;
     setTheme: React.Dispatch<React.SetStateAction<ThemeColors>>;
-    
 }

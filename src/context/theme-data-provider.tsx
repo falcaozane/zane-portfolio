@@ -2,11 +2,12 @@
 
 import setGlobalColorTheme from "@/lib/theme-colors";
 import { useTheme } from "next-themes";
-import { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import { ThemeColors, ThemeColorStateParams } from "@/types/theme-types";
 
 const ThemeContext = createContext({} as ThemeColorStateParams);
 
-export default function ThemeDataProvider({ children }: any) {
+export default function ThemeDataProvider({ children }: { children: React.ReactNode }) {
   const { theme: mode } = useTheme(); // light / dark
   const [themeColor, setThemeColor] = useState<ThemeColors>("Morning Bliss");
 
