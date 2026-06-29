@@ -8,6 +8,7 @@ import FZ from '../../public/fz.png';
 import FZNoon from '../../public/about/fz_afternoon.png'
 import FZMorning from '../../public/about/fz_morning.png'
 import FZEvening from '../../public/about/fz_evening.png'
+import FZNight from '../../public/about/fz_night.png'
 import { navItems, themes } from '@/data/site';
 import ThemeModeToggle from '@/components/theme-mode-toggle';
 import { useThemeContext } from "@/context/theme-data-provider";
@@ -21,7 +22,7 @@ function Header() {
       case "Morning Bliss": return FZMorning;
       case "Afternoon Glow": return FZNoon;
       case "Evening Twilight": return FZEvening;
-      case "Night Serenity": return "/night-serenity-logo.png";
+      case "Night Serenity": return FZNight;
       default: return FZ;
     }
   };
