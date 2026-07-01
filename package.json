@@ -15,6 +15,7 @@
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "@tabler/icons-react": "^3.34.1",
+    "@vercel/analytics": "^2.0.1",
     "daisyui": "^5.0.50",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.553.0",
