@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
 import ThemeDataProvider from "@/context/theme-data-provider";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
