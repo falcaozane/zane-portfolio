@@ -32,6 +32,10 @@ const achievements = [
   {
     title: "WESYNERGIZE Champion of the Month ( April 2026 ) — Capgemini India",
     detail: "Awarded for most number of contributions in internal projects and initiatives.",
+  },
+  {
+    title: "Winner of ER&D A.I Hackathon 2026 — Capgemini India",
+    detail: "Most Business Impact Solution. Awarded ₹5,000 for the project.",
   }
 ];
 
