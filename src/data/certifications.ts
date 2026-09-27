@@ -18,6 +18,30 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
+    slug: 'claude-certified-associate-foundations',
+    company: 'Anthropic',
+    website: 'https://www.anthropic.com/certification',
+    post: 'Claude Certified Associate - Foundations',
+    type: 'Certification',
+    start: 'Sep 2026',
+    end: 'Sep 2027',
+    letter: 'https://www.credly.com/badges/71992b51-1f0b-48ad-bea1-0a90b922ea8b/public_url',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5ZAukzc3Y4MbfpVx_Ka_Sv8QTw7hRoAZ1A&s',
+    credentialId: '71992b51-1f0b-48ad-bea1-0a90b922ea8b',
+    technologies: [
+      'Claude AI',
+      'Large Language Models (LLMs)',
+      'AI Safety',
+      'Prompt Engineering',
+      'Constitutional AI',
+      'Responsible AI',
+      'AI Ethics',
+      'Model Capabilities'
+    ],
+    detailedDescription:
+      'Validates foundational knowledge of Claude AI and its capabilities, covering core concepts in responsible AI development, prompt engineering, AI safety principles, and ethical AI deployment. Demonstrates understanding of Anthropic\'s Constitutional AI approach and best practices for working with large language models in production environments.'
+  },
+  {
   slug: 'google-cloud-associate-cloud-engineer-ace',
   company: 'Google Cloud',
   website: 'https://cloud.google.com/learn/certification/cloud-engineer',
