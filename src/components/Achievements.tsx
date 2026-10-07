@@ -35,7 +35,11 @@ const achievements = [
   },
   {
     title: "Winner of ER&D A.I Hackathon 2026 — Capgemini India",
-    detail: "Most Business Impact Solution. Awarded ₹5,000 for the project.",
+    detail: "Most Business Impact Solution. Awarded $170 for the solution.",
+  },
+{
+    title: "Winner of QET Americas A.I Hackathon 2026 — Capgemini India",
+    detail: "Most Promising Solution. Awarded $250 for the solution.",
   }
 ];
 
